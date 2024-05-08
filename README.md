@@ -16,13 +16,13 @@
 
 ### 制作时间
 
-**2024 / 4 / 9 ~ 2024 / 4 / 15**
+**2024 / 4 / 9 ~ ( 还没写完，有点懒 )**
 
 <br><br><br>
 
 ### 关于本书
 <br>
 
-**卑微的作者: 魏逸飞**
+
 
 **My GitHub： [Cosmo Clara](https://github.com/Cosmo-klara)**
