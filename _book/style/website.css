@@ -1,0 +1,28 @@
+.body-inner {
+    overflow-x: hidden
+  }
+  
+  .forkme {
+    position: absolute;
+    top: 40px;
+    right: -50px;
+    width: 212px;
+    height: 28px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: solid 1.5px #fff;
+    line-height: 30px;
+    background-color: #b00;
+    background: linear-gradient(#d00, #800);
+    text-decoration: none;
+    color: #eee;
+    transform: rotateZ(45deg);
+    text-align: center;
+    box-shadow: 2px 2px 2px #333;
+    z-index: 999;
+  }
+  
+  .book-header {
+    position: relative;
+    padding-right: 15rem;
+  }

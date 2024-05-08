@@ -1,0 +1,592 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3.4 复杂查询 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Cosmo Clara">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="合并查询.html" />
+    
+    
+    <link rel="prev" href="分组与排序.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter1/">
+            
+                <a href="../chapter1/">
+            
+                    
+                    第一章
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter1/MySQL安装与配置.html">
+            
+                <a href="../chapter1/MySQL安装与配置.html">
+            
+                    
+                    1.1 MySQL安装与配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter1/MySQLtee命令.html">
+            
+                <a href="../chapter1/MySQLtee命令.html">
+            
+                    
+                    1.2 MySQLtee命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter1/MySQL查看报错.html">
+            
+                <a href="../chapter1/MySQL查看报错.html">
+            
+                    
+                    1.3 MySQL查看报错
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../chapter1/MySQL字符集与校对集.html">
+            
+                <a href="../chapter1/MySQL字符集与校对集.html">
+            
+                    
+                    1.4 MySQL字符集与校对集
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter2/">
+            
+                <a href="../chapter2/">
+            
+                    
+                    第二章
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter2/数据库操作.html">
+            
+                <a href="../chapter2/数据库操作.html">
+            
+                    
+                    2.1 数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter2/数据表操作.html">
+            
+                <a href="../chapter2/数据表操作.html">
+            
+                    
+                    2.2 数据表操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter2/数据表数据操作.html">
+            
+                <a href="../chapter2/数据表数据操作.html">
+            
+                    
+                    2.3 数据表数据操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第三章
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="基本查询.html">
+            
+                <a href="基本查询.html">
+            
+                    
+                    3.1 基本查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="查询函数.html">
+            
+                <a href="查询函数.html">
+            
+                    
+                    3.2 查询函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="分组与排序.html">
+            
+                <a href="分组与排序.html">
+            
+                    
+                    3.3 分组与排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.4" data-path="复杂查询.html">
+            
+                <a href="复杂查询.html">
+            
+                    
+                    3.4 复杂查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="合并查询.html">
+            
+                <a href="合并查询.html">
+            
+                    
+                    3.5 合并查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >3.4 复杂查询</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="31-&#x590D;&#x6742;&#x67E5;&#x8BE2;"><strong>3.1 &#x590D;&#x6742;&#x67E5;&#x8BE2;</strong></h1>
+<h3 id="&#x5B50;&#x67E5;&#x8BE2;&#xFF0C;&#x628A;&#x4E00;&#x4E2A;&#x67E5;&#x8BE2;&#x5D4C;&#x5957;&#x5728;&#x53E6;&#x4E00;&#x4E2A;&#x67E5;&#x8BE2;&#x4E2D;--&#x5355;&#x8868;&#x67E5;&#x8BE2;-">&#x5B50;&#x67E5;&#x8BE2;&#xFF0C;&#x628A;&#x4E00;&#x4E2A;&#x67E5;&#x8BE2;&#x5D4C;&#x5957;&#x5728;&#x53E6;&#x4E00;&#x4E2A;&#x67E5;&#x8BE2;&#x4E2D; ( &#x5355;&#x8868;&#x67E5;&#x8BE2; )</h3>
+<blockquote>
+<p>&#x5C06;&#x4E24;&#x6761;&#x76F8;&#x5173;&#x7684;&#x8BED;&#x53E5;&#x5408;&#x5E76;&#x6210;&#x4E00;&#x4E2A;&#x8BED;&#x53E5;&#xFF0C;&#x5EFA;&#x7ACB;&#x7236;&#x5B50;&#x7EE7;&#x627F;&#x5173;&#x7CFB;&#xFF0C;&#x5C06;&#x7236;&#x4EB2;&#x8FD0;&#x7B97;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9;&#x513F;&#x5B50;&#x7684;&#x8FD0;&#x7B97;&#x6216;&#x8005;&#x7B5B;&#x9009;&#x6761;&#x4EF6;</p>
+</blockquote>
+<ul>
+<li><h4 id="&#x4E0D;&#x76F8;&#x5173;&#x5B50;&#x67E5;&#x8BE2;">&#x4E0D;&#x76F8;&#x5173;&#x5B50;&#x67E5;&#x8BE2;</h4>
+</li>
+</ul>
+<p>&#x7236;&#x67E5;&#x8BE2;&#x4F5C;&#x4E3A;&#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#xFF0C;&#x628A;&#x7236;&#x4EB2;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x7528;&#x4E8E;&#x5B50;&#x67E5;&#x8BE2;WHERE&#x8BED;&#x53E5;&#x4E2D;</p>
+<pre class="language-"><code class="lang-sql">    <span class="token keyword">SELECT</span> p_id<span class="token punctuation">,</span> p_name <span class="token keyword">FROM</span> players <span class="token keyword">WHERE</span> p_grade <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">SELECT</span> <span class="token function">MAX</span><span class="token punctuation">(</span>p_grade<span class="token punctuation">)</span> <span class="token keyword">FROM</span> players<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><img src="img/3-4-1.png" alt=" "></p>
+<ul>
+<li><h4 id="&#x76F8;&#x5173;&#x5B50;&#x67E5;&#x8BE2;">&#x76F8;&#x5173;&#x5B50;&#x67E5;&#x8BE2;</h4>
+</li>
+</ul>
+<p>&#x7236;&#x67E5;&#x8BE2;&#x4F5C;&#x4E3A;&#x8BA1;&#x7B97;&#x5B57;&#x6BB5;&#xFF0C;&#x6839;&#x636E;&#x7236;&#x4EB2;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x8BA1;&#x7B97;&#x5B50;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;</p>
+<pre class="language-"><code class="lang-sql">    <span class="token keyword">SELECT</span> i_id<span class="token punctuation">,</span> i_name<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword">SELECT</span>  <span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token keyword">FROM</span> records <span class="token keyword">WHERE</span> records<span class="token punctuation">.</span>ri_id <span class="token operator">=</span> items<span class="token punctuation">.</span>i_id<span class="token punctuation">)</span> &#x4E0A;&#x67B6;&#x8BB0;&#x5F55;&#x6570; <span class="token keyword">FROM</span> items<span class="token punctuation">;</span>
+</code></pre>
+<p><img src="img/3-4-2.png" alt=" "></p>
+<h3 id="&#x591A;&#x8868;&#x67E5;&#x8BE2;">&#x591A;&#x8868;&#x67E5;&#x8BE2;</h3>
+<ul>
+<li><h4 id="&#x7B1B;&#x5361;&#x5C14;&#x79EF;&#x73B0;&#x8C61;&#xFF1A;">&#x7B1B;&#x5361;&#x5C14;&#x79EF;&#x73B0;&#x8C61;&#xFF1A;</h4>
+</li>
+</ul>
+<p>&#x4E24;&#x5F20;&#x8868;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x6761;&#x4EF6;&#x9650;&#x5236;&#x8FDB;&#x884C;&#x8FDE;&#x63A5;&#x67E5;&#x8BE2;&#xFF0C;&#x6700;&#x7EC8;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x6761;&#x6570;&#x7B49;&#x4E8E;&#x4E24;&#x8868;&#x6761;&#x6570;&#x4E58;&#x79EF;</p>
+<pre class="language-"><code class="lang-sql">    <span class="token keyword">EXPLAIN</span> <span class="token keyword">SELECT</span>
+        items<span class="token punctuation">.</span>i_name<span class="token punctuation">,</span> records<span class="token punctuation">.</span>ri_price
+    <span class="token keyword">FROM</span>
+        items<span class="token punctuation">,</span> records<span class="token punctuation">;</span>
+</code></pre>
+<p><img src="img/3-4-3.png" alt=" "></p>
+<p>&#x6DFB;&#x52A0;&#x5339;&#x914D;&#x6761;&#x4EF6;&#xFF08;&#x53EA;&#x6539;&#x53D8;&#x663E;&#x793A;&#x7ED3;&#x679C;&#xFF0C;&#x5B9E;&#x9645;&#x6548;&#x7387;&#x672A;&#x63D0;&#x9AD8;&#xFF09;</p>
+<pre class="language-"><code class="lang-sql">    <span class="token keyword">EXPLAIN</span> <span class="token keyword">SELECT</span>
+        items<span class="token punctuation">.</span>i_name<span class="token punctuation">,</span> records<span class="token punctuation">.</span>ri_price
+    <span class="token keyword">FROM</span>
+        items<span class="token punctuation">,</span> records
+    <span class="token keyword">WHERE</span>
+        items<span class="token punctuation">.</span>i_id <span class="token operator">=</span> records<span class="token punctuation">.</span>ri_id<span class="token punctuation">;</span>
+</code></pre>
+<p><img src="img/3-4-4.png" alt=" "></p>
+<p>&#x5728;&#x67E5;&#x8BE2;&#x65F6;&#x6DFB;&#x52A0;&#x5BFB;&#x627E;&#x9650;&#x5236;&#xFF08;&#x63D0;&#x9AD8;&#x67E5;&#x8BE2;&#x6548;&#x7387;&#xFF09;---&#x51CF;&#x5C11;&#x8FDE;&#x63A5;&#x6B21;&#x6570;
+&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre class="language-"><code class="lang-sql">    <span class="token keyword">EXPLAIN</span> <span class="token keyword">SELECT</span>
+        items<span class="token punctuation">.</span>i_name<span class="token punctuation">,</span> records<span class="token punctuation">.</span>ri_price
+    <span class="token keyword">FROM</span>
+        items<span class="token punctuation">,</span> records
+    <span class="token keyword">WHERE</span>
+        items<span class="token punctuation">.</span>i_id <span class="token operator">=</span> records<span class="token punctuation">.</span>ri_id
+    <span class="token operator">AND</span>
+        items<span class="token punctuation">.</span>i_id <span class="token operator">&lt;</span> <span class="token number">1010</span><span class="token punctuation">;</span>
+</code></pre>
+<p><img src="img/3-4-5.png" alt=" "></p>
+<ul>
+<li><h4 id="&#x5E74;&#x4EE3;&#x5206;&#x7C7B;&#xFF1A;">&#x5E74;&#x4EE3;&#x5206;&#x7C7B;&#xFF1A;</h4>
+<ul>
+<li><p>SQL92&#xFF1A;&#x7ED3;&#x6784;&#x4E0D;&#x6E05;&#x6670;&#xFF0C;&#x8868;&#x8FDE;&#x63A5;&#x6761;&#x4EF6;&#x548C;&#x7B5B;&#x9009;&#x6761;&#x4EF6;&#x90FD;&#x5728;WHERE&#x540E;</p>
+</li>
+<li><p>SQL99&#xFF1A;&#x8868;&#x8FDE;&#x63A5;&#x7684;&#x6761;&#x4EF6;&#xFF08;ON&#xFF09;&#x548C;&#x7B5B;&#x9009;&#x6761;&#x4EF6;&#x5206;&#x79BB;</p>
+</li>
+</ul>
+</li>
+<li><h4 id="&#x8FDE;&#x63A5;&#x65B9;&#x5F0F;&#x5206;&#x7C7B;&#xFF1A;">&#x8FDE;&#x63A5;&#x65B9;&#x5F0F;&#x5206;&#x7C7B;&#xFF1A;</h4>
+<ul>
+<li><h5 id="&#x5185;&#x8FDE;&#x63A5;inner">&#x5185;&#x8FDE;&#x63A5;(INNER)</h5>
+<ul>
+<li><p>&#x7B49;&#x503C;&#x8FDE;&#x63A5; ---&#x6761;&#x4EF6;&#x4E3A;&#x7B49;&#x91CF;&#x5173;&#x7CFB;</p>
+<pre class="language-"><code class="lang-sql">  <span class="token keyword">EXPLAIN</span> <span class="token keyword">SELECT</span>
+      items<span class="token punctuation">.</span>i_name<span class="token punctuation">,</span> records<span class="token punctuation">.</span>ri_price
+  <span class="token keyword">FROM</span>
+      items
+  <span class="token keyword">INNER</span> <span class="token keyword">JOIN</span>
+      records
+  <span class="token keyword">ON</span>
+      items<span class="token punctuation">.</span>i_id <span class="token operator">&lt;</span> <span class="token number">1010</span>
+  <span class="token operator">AND</span>
+      items<span class="token punctuation">.</span>i_id <span class="token operator">=</span> records<span class="token punctuation">.</span>ri_id<span class="token punctuation">;</span>
+</code></pre>
+<p><img src="img/3-4-6.png" alt=" "></p>
+</li>
+<li><p>&#x975E;&#x7B49;&#x503C;&#x8FDE;&#x63A5; ---&#x6761;&#x4EF6;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x7B49;&#x91CF;&#x5173;&#x7CFB;</p>
+<pre class="language-"><code class="lang-sql">  <span class="token keyword">EXPLAIN</span> <span class="token keyword">SELECT</span>
+      i<span class="token punctuation">.</span>i_name<span class="token punctuation">,</span> r<span class="token punctuation">.</span>ri_price
+  <span class="token keyword">FROM</span>
+      items i
+  <span class="token keyword">INNER</span> <span class="token keyword">JOIN</span>
+      records r
+  <span class="token keyword">ON</span>
+      i<span class="token punctuation">.</span>i_value <span class="token operator">&lt;</span> r<span class="token punctuation">.</span>ri_price<span class="token punctuation">;</span>
+</code></pre>
+<p><img src="img/3-4-7.png" alt=" "></p>
+</li>
+<li><p>&#x81EA;&#x8FDE;&#x63A5; ---&#x4E00;&#x5F20;&#x8868;&#x770B;&#x6210;&#x4E24;&#x5F20;&#x8868;&#xFF0C;&#x522B;&#x540D;</p>
+<pre class="language-"><code class="lang-sql">  <span class="token comment"># &#x67E5;&#x8BE2;&#x54EA;&#x51E0;&#x5929;&#x65E2;&#x6709;&#x4E0A;&#x67B6;&#x4E5F;&#x6709;&#x552E;&#x51FA;</span>
+  <span class="token keyword">SELECT</span> <span class="token keyword">DISTINCT</span>
+      a<span class="token punctuation">.</span>shelf_time
+  <span class="token keyword">FROM</span>
+      records a
+  <span class="token keyword">JOIN</span>
+      records b
+  <span class="token keyword">ON</span>
+      a<span class="token punctuation">.</span>shelf_time<span class="token operator">=</span>b<span class="token punctuation">.</span>closing_time<span class="token punctuation">;</span>
+</code></pre>
+<p><img src="img/3-4-8.png" alt=" "></p>
+</li>
+</ul>
+</li>
+<li><h5 id="&#x5916;&#x8FDE;&#x63A5;outer----&#x4E24;&#x5F20;&#x8868;&#x8FDE;&#x63A5;&#x4EA7;&#x751F;&#x4E3B;&#x6B21;&#x5173;&#x7CFB;">&#x5916;&#x8FDE;&#x63A5;(OUTER) ---&#x4E24;&#x5F20;&#x8868;&#x8FDE;&#x63A5;&#x4EA7;&#x751F;&#x4E3B;&#x6B21;&#x5173;&#x7CFB;</h5>
+<ul>
+<li><p>&#x5DE6;&#x8FDE;&#x63A5;</p>
+</li>
+<li><p>&#x53F3;&#x8FDE;&#x63A5; ---&#x5C06;JOIN&#x53F3;&#x8FB9;&#x5F53;&#x4F5C;&#x4E3B;&#x8868;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x4E3A;&#x4E86;&#x5C06;&#x8FD9;&#x5F20;&#x8868;&#x7684;&#x6570;&#x636E;&#x5168;&#x90E8;&#x67E5;&#x8BE2;&#x51FA;&#x6765;</p>
+<pre class="language-"><code class="lang-sql">  <span class="token keyword">SELECT</span>
+      e<span class="token punctuation">.</span>ename<span class="token punctuation">,</span> d<span class="token punctuation">.</span>dname
+  <span class="token keyword">FROM</span>
+      emp e 
+  &#x200B;<span class="token keyword">RIGHT</span> <span class="token keyword">JOIN</span>
+      dept d
+  <span class="token keyword">ON</span>
+      e<span class="token punctuation">.</span>deptno <span class="token operator">=</span> d<span class="token punctuation">.</span>deptno<span class="token punctuation">;</span>
+</code></pre>
+</li>
+<li><p>&#x5168;&#x8FDE;&#x63A5;&#xFF1A;a&#x548C;b&#x90FD;&#x662F;&#x4E3B;&#x8868;</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="分组与排序.html" class="navigation navigation-prev " aria-label="Previous page: 3.3 分组与排序">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="合并查询.html" class="navigation navigation-next " aria-label="Next page: 3.5 合并查询">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3.4 复杂查询","level":"1.4.4","depth":2,"next":{"title":"3.5 合并查询","level":"1.4.5","depth":2,"path":"chapter3/合并查询.md","ref":"chapter3/合并查询.md","articles":[]},"previous":{"title":"3.3 分组与排序","level":"1.4.3","depth":2,"path":"chapter3/分组与排序.md","ref":"chapter3/分组与排序.md","articles":[]},"dir":"ltr"},"config":{"plugins":["copy-code-button","prism","splitter","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Cosmo Clara","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"chapter3/复杂查询.md","mtime":"2024-04-22T09:43:42.241Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-04-22T09:44:00.326Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,8 @@
+{
+    "author": "Cosmo Clara",
+    "plugins": [
+        "copy-code-button",
+        "prism",
+        "splitter"
+    ]
+}
