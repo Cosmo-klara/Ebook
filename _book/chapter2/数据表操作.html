@@ -1,0 +1,645 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.2 数据表操作 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Cosmo Clara">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="数据表数据操作.html" />
+    
+    
+    <link rel="prev" href="数据库操作.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter1/">
+            
+                <a href="../chapter1/">
+            
+                    
+                    第一章
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter1/MySQL安装与配置.html">
+            
+                <a href="../chapter1/MySQL安装与配置.html">
+            
+                    
+                    1.1 MySQL安装与配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter1/MySQLtee命令.html">
+            
+                <a href="../chapter1/MySQLtee命令.html">
+            
+                    
+                    1.2 MySQLtee命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter1/MySQL查看报错.html">
+            
+                <a href="../chapter1/MySQL查看报错.html">
+            
+                    
+                    1.3 MySQL查看报错
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../chapter1/MySQL字符集与校对集.html">
+            
+                <a href="../chapter1/MySQL字符集与校对集.html">
+            
+                    
+                    1.4 MySQL字符集与校对集
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第二章
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="数据库操作.html">
+            
+                <a href="数据库操作.html">
+            
+                    
+                    2.1 数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="数据表操作.html">
+            
+                <a href="数据表操作.html">
+            
+                    
+                    2.2 数据表操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="数据表数据操作.html">
+            
+                <a href="数据表数据操作.html">
+            
+                    
+                    2.3 数据表数据操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter3/">
+            
+                <a href="../chapter3/">
+            
+                    
+                    第三章
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter3/基本查询.html">
+            
+                <a href="../chapter3/基本查询.html">
+            
+                    
+                    3.1 基本查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter3/查询函数.html">
+            
+                <a href="../chapter3/查询函数.html">
+            
+                    
+                    3.2 查询函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter3/分组与排序.html">
+            
+                <a href="../chapter3/分组与排序.html">
+            
+                    
+                    3.3 分组与排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../chapter3/复杂查询.html">
+            
+                <a href="../chapter3/复杂查询.html">
+            
+                    
+                    3.4 复杂查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../chapter3/合并查询.html">
+            
+                <a href="../chapter3/合并查询.html">
+            
+                    
+                    3.5 合并查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2.2 数据表操作</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6570;&#x636E;&#x8868;&#x64CD;&#x4F5C;">&#x6570;&#x636E;&#x8868;&#x64CD;&#x4F5C;</h1>
+<h3 id="&#x67E5;&#x770B;&#x6570;&#x636E;&#x8868;-showdesc">&#x67E5;&#x770B;&#x6570;&#x636E;&#x8868; SHOW/DESC</h3>
+<ul>
+<li><h4 id="&#x67E5;&#x770B;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5DF2;&#x6709;&#x7684;&#x6570;&#x636E;&#x8868;">&#x67E5;&#x770B;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5DF2;&#x6709;&#x7684;&#x6570;&#x636E;&#x8868;:</h4>
+</li>
+</ul>
+<pre class="language-"><code class="lang-sql">    <span class="token comment"># &#x5148;&#x9009;&#x62E9;&#x4F7F;&#x7528;&#x7684;&#x6570;&#x636E;&#x5E93;(test3&#x4E2D;&#x5DF2;&#x5EFA;&#x597D;&#x8868;)</span>
+    <span class="token keyword">USE</span> test3<span class="token punctuation">;</span>
+    <span class="token keyword">SHOW</span> <span class="token keyword">TABLES</span><span class="token punctuation">;</span>
+</code></pre>
+<p><img src="img/2-2-1.jpg" alt=" "></p>
+<ul>
+<li><h4 id="&#x67E5;&#x770B;&#x6307;&#x5B9A;&#x8868;&#x7ED3;&#x6784;&#xFF1A;">&#x67E5;&#x770B;&#x6307;&#x5B9A;&#x8868;&#x7ED3;&#x6784;&#xFF1A;</h4>
+</li>
+</ul>
+<pre class="language-"><code class="lang-sql">    <span class="token comment"># DESC&#x662F;DESCRIBE&#x7684;&#x7B80;&#x5199;&#xFF0C;&#x4E5F;&#x53EF;&#x5B8C;&#x6574;&#x5199;&#x51FA;&#x8FDB;&#x884C;&#x67E5;&#x770B;</span>
+    <span class="token keyword">DESC</span> students<span class="token punctuation">;</span>
+    <span class="token comment"># &#x6548;&#x679C;&#x76F8;&#x540C;</span>
+    <span class="token keyword">SHOW</span> <span class="token keyword">COLUMNS</span> <span class="token keyword">FROM</span> students<span class="token punctuation">;</span>
+    <span class="token comment"># &#x663E;&#x793A;&#x5B8C;&#x6574;&#x8868;&#x7ED3;&#x6784;</span>
+    <span class="token keyword">SHOW</span> <span class="token keyword">FULL</span> <span class="token keyword">COLUMNS</span> <span class="token keyword">FROM</span> students<span class="token punctuation">;</span>
+</code></pre>
+<p><img src="img/2-2-2.jpg" alt=" "></p>
+<ul>
+<li><h4 id="&#x67E5;&#x770B;&#x6570;&#x636E;&#x8868;&#x521B;&#x5EFA;&#x8BED;&#x53E5;">&#x67E5;&#x770B;&#x6570;&#x636E;&#x8868;&#x521B;&#x5EFA;&#x8BED;&#x53E5;</h4>
+</li>
+</ul>
+<pre class="language-"><code class="lang-sql">    <span class="token keyword">SHOW</span> <span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> students<span class="token punctuation">;</span>
+</code></pre>
+<p><img src="img/2-2-3.jpg" alt=" "></p>
+<h3 id="&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;-create">&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868; CREATE</h3>
+<h4 id="&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#x8BED;&#x6CD5;&#xFF1A;">&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#x8BED;&#x6CD5;&#xFF1A;</h4>
+<pre class="language-"><code class="lang-sql">    <span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> &#x8868;&#x540D;&#x79F0;<span class="token punctuation">(</span>
+&#x200B;        &#x5217;&#x540D;<span class="token number">1</span> &#x6570;&#x636E;&#x7C7B;&#x578B;<span class="token number">1</span>&#xFF0C;
+        &#x5217;&#x540D;<span class="token number">2</span> &#x6570;&#x636E;&#x7C7B;&#x578B;<span class="token number">2</span>&#xFF0C;
+             <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+        &#x5217;&#x540D;n &#x6570;&#x636E;&#x7C7B;&#x578B;n
+        <span class="token comment"># &#x6CE8;&#x610F;&#xFF1A;&#x6700;&#x540E;&#x4E00;&#x5217;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x52A0;&#x9017;&#x53F7;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h4 id="&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#xFF1A;">&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#xFF1A;</h4>
+<ul>
+<li><h5 id="&#x5224;&#x65AD;&#x4E0D;&#x5B58;&#x5728;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;">&#x5224;&#x65AD;&#x4E0D;&#x5B58;&#x5728;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;</h5>
+</li>
+</ul>
+<pre class="language-"><code class="lang-sql">    <span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> <span class="token keyword">IF</span> <span class="token operator">NOT</span> <span class="token keyword">EXISTS</span> test1<span class="token punctuation">(</span>
+        id <span class="token keyword">INT</span><span class="token punctuation">,</span>
+        name <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment"># &#x9A8C;&#x8BC1;&#x662F;&#x5426;&#x6210;&#x529F;&#x521B;&#x5EFA;</span>
+    <span class="token keyword">SHOW</span> <span class="token keyword">TABLES</span><span class="token punctuation">;</span>
+    <span class="token keyword">DESC</span> test1<span class="token punctuation">;</span>
+</code></pre>
+<p><img src="img/2-2-4.jpg" alt=" "></p>
+<ul>
+<li><h5 id="&#x5728;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#x65F6;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x96C6;">&#x5728;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#x65F6;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x96C6;</h5>
+</li>
+</ul>
+<blockquote>
+<p>&#x7531;&#x4E8E;&#x4FEE;&#x6539;&#x4E86;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; utf8 , &#x4E3A;&#x5C55;&#x793A;&#x6548;&#x679C;&#x6307;&#x5B9A;&#x4E3A;gbk</p>
+</blockquote>
+<pre class="language-"><code class="lang-sql">    <span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> <span class="token keyword">IF</span> <span class="token operator">NOT</span> <span class="token keyword">EXISTS</span> test2<span class="token punctuation">(</span>
+        id <span class="token keyword">INT</span><span class="token punctuation">,</span>
+        name <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span> <span class="token keyword">CHARSET</span> gbk<span class="token punctuation">;</span>
+    <span class="token keyword">SHOW</span> <span class="token keyword">FULL</span> <span class="token keyword">COLUMNS</span> <span class="token keyword">FROM</span> test2<span class="token punctuation">;</span>
+</code></pre>
+<p><img src="img/2-2-5.jpg" alt=" "></p>
+<ul>
+<li><h5 id="&#x5728;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#x65F6;&#x4E3A;&#x5217;&#x6DFB;&#x52A0;&#x5907;&#x6CE8;&#x4FE1;&#x606F;">&#x5728;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#x65F6;&#x4E3A;&#x5217;&#x6DFB;&#x52A0;&#x5907;&#x6CE8;&#x4FE1;&#x606F;</h5>
+</li>
+</ul>
+<pre class="language-"><code class="lang-sql">    <span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> <span class="token keyword">IF</span> <span class="token operator">NOT</span> <span class="token keyword">EXISTS</span> test3<span class="token punctuation">(</span>
+        id <span class="token keyword">INT</span> <span class="token keyword">COMMENT</span> <span class="token string">&apos;&#x5B66;&#x53F7;&apos;</span><span class="token punctuation">,</span>
+        name <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span> <span class="token keyword">COMMENT</span> <span class="token string">&apos;&#x59D3;&#x540D;&apos;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">SHOW</span> <span class="token keyword">FULL</span> <span class="token keyword">COLUMNS</span> <span class="token keyword">FROM</span> test3<span class="token punctuation">;</span>
+</code></pre>
+<p><img src="img/2-2-6.jpg" alt=" "></p>
+<h3 id="&#x4FEE;&#x6539;&#x6570;&#x636E;&#x8868;-alter">&#x4FEE;&#x6539;&#x6570;&#x636E;&#x8868; ALTER</h3>
+<blockquote>
+<p> &#x5B57;&#x6BB5;&#x540D;&#xFF1A;&#x6570;&#x636E;&#x8868;&#x7684;&#x5217;&#x540D;</p>
+</blockquote>
+<ul>
+<li><h4 id="&#x4FEE;&#x6539;&#x5B57;&#x7B26;&#x96C6;--charset">&#x4FEE;&#x6539;&#x5B57;&#x7B26;&#x96C6;  CHARSET</h4>
+</li>
+</ul>
+<pre class="language-"><code class="lang-sql">    <span class="token comment"># CHARSET &#x662F; CHARACTER SET&#x7684;&#x7F29;&#x5199;</span>
+    <span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> test2 <span class="token keyword">CHARSET</span> utf8<span class="token punctuation">;</span>
+    <span class="token keyword">SHOW</span> <span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> test2<span class="token punctuation">;</span>
+</code></pre>
+<p><img src="img/2-2-7.jpg" alt=" "></p>
+<ul>
+<li><h4 id="&#x4FEE;&#x6539;&#x8868;&#x540D;&#x79F0;--rename">&#x4FEE;&#x6539;&#x8868;&#x540D;&#x79F0;  RENAME</h4>
+</li>
+</ul>
+<pre class="language-"><code class="lang-sql">    <span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> test2 <span class="token keyword">RENAME</span> <span class="token keyword">AS</span> test4<span class="token punctuation">;</span>
+    <span class="token keyword">SHOW</span> <span class="token keyword">TABLES</span><span class="token punctuation">;</span>
+    <span class="token comment"># &#x7B49;&#x6548;</span>
+    <span class="token keyword">RENAME</span> <span class="token keyword">TABLE</span> test4 <span class="token keyword">to</span> test0<span class="token punctuation">;</span>
+    <span class="token keyword">SHOW</span> <span class="token keyword">TABLES</span><span class="token punctuation">;</span>
+</code></pre>
+<p><img src="img/2-2-8.jpg" alt=" "></p>
+<ul>
+<li><h4 id="&#x65B0;&#x589E;&#x5B57;&#x6BB5;-add">&#x65B0;&#x589E;&#x5B57;&#x6BB5; ADD</h4>
+</li>
+</ul>
+<pre class="language-"><code class="lang-sql">    <span class="token comment"># &#x5728;&#x6700;&#x540E;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#xFF1A;</span>
+    <span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> test2 <span class="token keyword">ADD</span> gender <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">DESC</span> test2<span class="token punctuation">;</span>
+    <span class="token comment"># &#x5728;&#x6700;&#x524D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;</span>
+    <span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> test2 <span class="token keyword">ADD</span> major <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span> <span class="token keyword">FIRST</span><span class="token punctuation">;</span>
+    <span class="token keyword">DESC</span> test2<span class="token punctuation">;</span>
+    <span class="token comment"># &#x4E00;&#x6B21;&#x6DFB;&#x52A0;&#x591A;&#x4E2A;&#x5B57;&#x6BB5;&#xFF1A;</span>
+    <span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> test2 <span class="token keyword">ADD</span><span class="token punctuation">(</span>
+            class <span class="token keyword">INT</span><span class="token punctuation">,</span>
+            country <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span>
+        <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">DESC</span> test2<span class="token punctuation">;</span>
+    <span class="token comment"># &#x6307;&#x5B9A;&#x5B57;&#x6BB5;&#x540E;&#x6DFB;&#x52A0;&#x5B57;&#x6BB5;&#xFF1A;</span>
+    <span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> test2 <span class="token keyword">ADD</span> phone_number <span class="token keyword">INT</span> <span class="token keyword">AFTER</span> class<span class="token punctuation">;</span>
+    <span class="token keyword">DESC</span> test2<span class="token punctuation">;</span>
+</code></pre>
+<p><img src="img/2-2-9.jpg" alt=" "></p>
+<ul>
+<li><h4 id="&#x4FEE;&#x6539;&#x5B57;&#x6BB5;-changemodify">&#x4FEE;&#x6539;&#x5B57;&#x6BB5; CHANGE/MODIFY</h4>
+<ul>
+<li><p>&#x4FEE;&#x6539;&#x5B57;&#x6BB5;&#x540D;&#xFF1A;</p>
+<pre class="language-"><code class="lang-sql">  <span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> test2 CHANGE major email <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">DESC</span> test2<span class="token punctuation">;</span>
+</code></pre>
+<p><img src="img/2-2-10.jpg" alt=" "></p>
+</li>
+<li><p>&#x4FEE;&#x6539;&#x5B57;&#x6BB5;&#x7C7B;&#x578B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-sql">  <span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> test2 <span class="token keyword">MODIFY</span> name <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">DESC</span> test2<span class="token punctuation">;</span>
+</code></pre>
+<p><img src="img/2-2-11.jpg" alt=" "></p>
+</li>
+<li><p>&#x4FEE;&#x6539;&#x5B57;&#x6BB5;&#x4F4D;&#x7F6E;&#xFF1A;</p>
+<pre class="language-"><code class="lang-sql">  <span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> test2 <span class="token keyword">MODIFY</span> id <span class="token keyword">INT</span> <span class="token keyword">FIRST</span><span class="token punctuation">;</span>
+  <span class="token keyword">DESC</span> test2<span class="token punctuation">;</span>
+  <span class="token comment"># &#x6307;&#x5B9A;&#x5B57;&#x6BB5;&#x540E;&#x6DFB;&#x52A0;&#x5B57;&#x6BB5;&#xFF1A;</span>
+  <span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> test2 <span class="token keyword">MODIFY</span> email <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span> <span class="token keyword">AFTER</span> phone_number<span class="token punctuation">;</span>
+  <span class="token keyword">DESC</span> test2<span class="token punctuation">;</span>
+</code></pre>
+<p><img src="img/2-2-12.jpg" alt=" "></p>
+</li>
+<li><p>&#x4FEE;&#x6539;&#x5B57;&#x6BB5;&#x5B57;&#x7B26;&#x96C6;&#xFF1A;</p>
+<pre class="language-"><code class="lang-sql">  <span class="token keyword">SHOW</span> <span class="token keyword">FULL</span> <span class="token keyword">COLUMNS</span> <span class="token keyword">FROM</span> test2<span class="token punctuation">;</span>
+  <span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> test2 <span class="token keyword">MODIFY</span> name <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span> <span class="token keyword">CHARSET</span> gbk<span class="token punctuation">;</span>
+  <span class="token keyword">SHOW</span> <span class="token keyword">FULL</span> <span class="token keyword">COLUMNS</span> <span class="token keyword">FROM</span> test2<span class="token punctuation">;</span>
+</code></pre>
+<p><img src="img/2-2-13.jpg" alt=" "></p>
+</li>
+</ul>
+</li>
+<li><h4 id="&#x5220;&#x9664;&#x5B57;&#x6BB5;-drop">&#x5220;&#x9664;&#x5B57;&#x6BB5; DROP</h4>
+</li>
+</ul>
+<pre class="language-"><code class="lang-sql">    <span class="token comment"># COLUMN &#x53EF;&#x7701;&#x7565;</span>
+    <span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> test2 <span class="token keyword">DROP</span> <span class="token keyword">COLUMN</span> country<span class="token punctuation">;</span>
+    <span class="token keyword">DESC</span> test2<span class="token punctuation">;</span>
+    <span class="token comment"># &#x5220;&#x9664;&#x591A;&#x4E2A;&#x5B57;&#x6BB5;</span>
+    <span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> test2
+        <span class="token keyword">DROP</span> gender<span class="token punctuation">,</span>
+        <span class="token keyword">DROP</span> class<span class="token punctuation">,</span>
+        <span class="token keyword">DROP</span> email<span class="token punctuation">,</span>
+        <span class="token keyword">DROP</span> phone_number<span class="token punctuation">;</span>
+    <span class="token keyword">DESC</span> test2<span class="token punctuation">;</span>
+</code></pre>
+<p><img src="img/2-2-14.jpg" alt=" "></p>
+<h3 id="&#x5220;&#x9664;&#x6570;&#x636E;&#x8868;-drop">&#x5220;&#x9664;&#x6570;&#x636E;&#x8868; DROP</h3>
+<pre class="language-"><code class="lang-sql">    <span class="token keyword">DROP</span> <span class="token keyword">TABLE</span> <span class="token keyword">IF</span> <span class="token keyword">EXISTS</span> test2<span class="token punctuation">;</span>
+    <span class="token keyword">SHOW</span> <span class="token keyword">TABLES</span><span class="token punctuation">;</span>
+    <span class="token comment"># &#x4E00;&#x6B21;&#x6027;&#x5220;&#x9664;&#x591A;&#x4E2A;&#x6570;&#x636E;&#x8868;</span>
+    <span class="token keyword">DROP</span> <span class="token keyword">TABLE</span> test1<span class="token punctuation">,</span> test3<span class="token punctuation">;</span>
+    <span class="token keyword">SHOW</span> <span class="token keyword">TABLES</span><span class="token punctuation">;</span>
+</code></pre>
+<p><img src="img/2-2-15.jpg" alt=" "></p>
+<blockquote>
+<p><strong>&#x6CE8;&#x610F;&#xFF0C;&#x6570;&#x636E;&#x8868;&#x53EF;&#x4EE5;&#x4E00;&#x6B21;&#x5220;&#x9664;&#x591A;&#x4E2A;&#xFF0C;&#x4F46;&#x6570;&#x636E;&#x5E93;&#x53EA;&#x80FD;&#x4E00;&#x4E2A;&#x4E00;&#x4E2A;&#x5220;&#x9664;</strong></p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="数据库操作.html" class="navigation navigation-prev " aria-label="Previous page: 2.1 数据库操作">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="数据表数据操作.html" class="navigation navigation-next " aria-label="Next page: 2.3 数据表数据操作">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.2 数据表操作","level":"1.3.2","depth":2,"next":{"title":"2.3 数据表数据操作","level":"1.3.3","depth":2,"path":"chapter2/数据表数据操作.md","ref":"chapter2/数据表数据操作.md","articles":[]},"previous":{"title":"2.1 数据库操作","level":"1.3.1","depth":2,"path":"chapter2/数据库操作.md","ref":"chapter2/数据库操作.md","articles":[]},"dir":"ltr"},"config":{"plugins":["copy-code-button","prism","splitter","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Cosmo Clara","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"chapter2/数据表操作.md","mtime":"2024-04-09T13:18:29.134Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-04-22T09:44:00.326Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
