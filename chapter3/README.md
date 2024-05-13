@@ -24,7 +24,7 @@
         p_id              INT,
         p_name            VARCHAR(32),
         p_gender          CHAR,
-        registration_time DATETIME,
+        registration_time DATE,
         warehouse_id      INT,
         p_grade           INT
     );
@@ -40,14 +40,6 @@
         i_class       VARCHAR(16)
     );
 
-    CREATE TABLE warehouse
-    (
-        w_id    INT,
-        wi_id   INT,
-        wi_num  INT,
-        w_space INT
-    );
-
     CREATE TABLE records
     (
         r_id         INT,
@@ -55,8 +47,8 @@
         ri_id        INT,
         ri_num       TINYINT,
         ri_price     INT,
-        shelf_time   DATETIME,
-        closing_time DATETIME,
+        shelf_time   DATE,
+        closing_time DATE,
         buyer_id     INT
     );
 
@@ -82,10 +74,10 @@
             (10012, '德文潘', '男', '2022-1-2', 10012, 30),
             (10013, '兰德尔', '男', '2023-9-24', 10013, 25),
             (10014, '罗尔夫', '男', '2023-11-5', 10014, 21),
-            (10017, '科特', '男', '2023-11-5', 10017, 23),
-            (10018, '萌新', '女', '2024-1-13', 10018, 17),
             (10015, '卡尔', '男', '2023-7-3', 10015, 25),
-            (10016, '思密达', '男', '2023-12-5', 10016, 22);
+            (10016, '思密达', '男', '2023-12-5', 10016, 22),
+            (10017, '科特', '男', '2023-11-5', 10017, 23),
+            (10018, '萌新', '女', '2024-1-13', 10018, 17);
 
 
     INSERT INTO items (i_id, i_name, i_weight, i_space, i_value, i_class)
