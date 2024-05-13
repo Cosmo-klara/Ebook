@@ -148,5 +148,3 @@ VALUES (10001, 1001, 92),
        (10011, 1008, 73),
        (10012, 1008, 95),
        (10013, 1008, 53);
-
-SELECT sname FROM students LIMIT 3 OFFSET 2;
