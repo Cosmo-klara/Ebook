@@ -12,13 +12,13 @@
 
 ### 制作时间
 
-**2024 / 4 / 9 ~ ( 还没写完，有点懒 )**
+**2024.5.1 ~ 2024.5.20**
 
 <br><br><br>
 
 ### 关于本书
-<br>
 
+<br>
 
 
 **My GitHub： [Cosmo Clara](https://github.com/Cosmo-klara)**
