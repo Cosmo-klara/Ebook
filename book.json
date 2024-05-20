@@ -13,5 +13,16 @@
             "minHeaderCount": "2",
             "minHeaderDeep": "2"
         }
+    },
+    "pdf": {
+        "pageNumbers": true,
+        "fontSize": 12,
+        "paperSize": "a4",
+        "margin": {
+            "top": 24,
+            "bottom": 24,
+            "left": 31,
+            "right": 31
+        }
     }
 }
