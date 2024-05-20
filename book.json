@@ -13,10 +13,10 @@
         "fontSize": 12,
         "paperSize": "a4",
         "margin": {
-            "top": 24,
-            "bottom": 24,
-            "left": 31,
-            "right": 31
+            "top": 21,
+            "bottom": 21,
+            "left": 27,
+            "right": 27
         }
     }
 }
