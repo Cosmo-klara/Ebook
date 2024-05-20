@@ -27,5 +27,6 @@
     * [5.1 用户管理基础](chapter5/5-1.md)
     * [5.2 用户管理进阶](chapter5/5-2.md)
     * [5.3 权限管理](chapter5/5-3.md)
-    * [5.4 备份](chapter5/5-4.md)
-    * [5.5 恢复](chapter5/5-5.md)
+    * [5.4 维护表](chapter5/5-4.md)
+    * [5.5 备份](chapter5/5-5.md)
+    * [5.6 恢复](chapter5/5-6.md)
