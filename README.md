@@ -20,6 +20,6 @@
 
 <br>
 
-通过 Github Page 访问：(https://cosmo-klara.github.io/Ebook/)[https://cosmo-klara.github.io/Ebook/]
+**通过 Github Page 访问：[https://cosmo-klara.github.io/Ebook/](https://cosmo-klara.github.io/Ebook/)**
 
 **My GitHub： [Cosmo Clara](https://github.com/Cosmo-klara)**
