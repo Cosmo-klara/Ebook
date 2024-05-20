@@ -538,52 +538,52 @@
 <li><h4 id="&#x67E5;&#x770B;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5DF2;&#x6709;&#x7684;&#x6570;&#x636E;&#x8868;">&#x67E5;&#x770B;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5DF2;&#x6709;&#x7684;&#x6570;&#x636E;&#x8868;:</h4>
 </li>
 </ul>
-<pre><code class="lang-sql">    # &#x5148;&#x9009;&#x62E9;&#x4F7F;&#x7528;&#x7684;&#x6570;&#x636E;&#x5E93;( test3 &#x4E2D;&#x5DF2;&#x5EFA;&#x597D;&#x8868;)
-    <span class="hljs-keyword">USE</span> test3;
-    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">TABLES</span>;
+<pre><code class="lang-sql"># &#x5148;&#x9009;&#x62E9;&#x4F7F;&#x7528;&#x7684;&#x6570;&#x636E;&#x5E93;( test3 &#x4E2D;&#x5DF2;&#x5EFA;&#x597D;&#x8868;)
+<span class="hljs-keyword">USE</span> test3;
+<span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">TABLES</span>;
 </code></pre>
 <p><img src="img/2-2-1.jpg" alt=" "></p>
 <ul>
 <li><h4 id="&#x67E5;&#x770B;&#x6307;&#x5B9A;&#x8868;&#x7ED3;&#x6784;&#xFF1A;">&#x67E5;&#x770B;&#x6307;&#x5B9A;&#x8868;&#x7ED3;&#x6784;&#xFF1A;</h4>
 </li>
 </ul>
-<pre><code class="lang-sql">    # DESC &#x662F; <span class="hljs-keyword">DESCRIBE</span> &#x7684;&#x7B80;&#x5199;&#xFF0C;&#x4E5F;&#x53EF;&#x5B8C;&#x6574;&#x5199;&#x51FA;&#x8FDB;&#x884C;&#x67E5;&#x770B;
-    <span class="hljs-keyword">DESC</span> students;
-    # &#x6548;&#x679C;&#x76F8;&#x540C;
-    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">COLUMNS</span> <span class="hljs-keyword">FROM</span> students;
-    # &#x663E;&#x793A;&#x5B8C;&#x6574;&#x8868;&#x7ED3;&#x6784;
-    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">FULL</span> <span class="hljs-keyword">COLUMNS</span> <span class="hljs-keyword">FROM</span> students;
+<pre><code class="lang-sql"># DESC &#x662F; <span class="hljs-keyword">DESCRIBE</span> &#x7684;&#x7B80;&#x5199;&#xFF0C;&#x4E5F;&#x53EF;&#x5B8C;&#x6574;&#x5199;&#x51FA;&#x8FDB;&#x884C;&#x67E5;&#x770B;
+<span class="hljs-keyword">DESC</span> students;
+# &#x6548;&#x679C;&#x76F8;&#x540C;
+<span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">COLUMNS</span> <span class="hljs-keyword">FROM</span> students;
+# &#x663E;&#x793A;&#x5B8C;&#x6574;&#x8868;&#x7ED3;&#x6784;
+<span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">FULL</span> <span class="hljs-keyword">COLUMNS</span> <span class="hljs-keyword">FROM</span> students;
 </code></pre>
 <p><img src="img/2-2-2.jpg" alt=" "></p>
 <ul>
 <li><h4 id="&#x67E5;&#x770B;&#x6570;&#x636E;&#x8868;&#x521B;&#x5EFA;&#x8BED;&#x53E5;">&#x67E5;&#x770B;&#x6570;&#x636E;&#x8868;&#x521B;&#x5EFA;&#x8BED;&#x53E5;</h4>
 </li>
 </ul>
-<pre><code class="lang-sql">    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> students;
+<pre><code class="lang-sql"><span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> students;
 </code></pre>
 <p><img src="img/2-2-3.jpg" alt=" "></p>
 <h3 id="&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;-create">&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868; <code>CREATE</code></h3>
 <h4 id="&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#x8BED;&#x6CD5;&#xFF1A;">&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#x8BED;&#x6CD5;&#xFF1A;</h4>
-<pre><code class="lang-sql">    <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> &#x8868;&#x540D;&#x79F0;(
+<pre><code class="lang-sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> &#x8868;&#x540D;&#x79F0;(
 &#x200B;        &#x5217;&#x540D;<span class="hljs-number">1</span> &#x6570;&#x636E;&#x7C7B;&#x578B;<span class="hljs-number">1</span>&#xFF0C;
-        &#x5217;&#x540D;<span class="hljs-number">2</span> &#x6570;&#x636E;&#x7C7B;&#x578B;<span class="hljs-number">2</span>&#xFF0C;
-             ....
-        &#x5217;&#x540D;n &#x6570;&#x636E;&#x7C7B;&#x578B;n
-        # &#x6CE8;&#x610F;&#xFF1A;&#x6700;&#x540E;&#x4E00;&#x5217;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x52A0;&#x9017;&#x53F7;
-    );
+    &#x5217;&#x540D;<span class="hljs-number">2</span> &#x6570;&#x636E;&#x7C7B;&#x578B;<span class="hljs-number">2</span>&#xFF0C;
+            ....
+    &#x5217;&#x540D;n &#x6570;&#x636E;&#x7C7B;&#x578B;n
+    # &#x6CE8;&#x610F;&#xFF1A;&#x6700;&#x540E;&#x4E00;&#x5217;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x52A0;&#x9017;&#x53F7;
+);
 </code></pre>
 <h4 id="&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#xFF1A;">&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#xFF1A;</h4>
 <ul>
 <li><h5 id="&#x5224;&#x65AD;&#x4E0D;&#x5B58;&#x5728;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;">&#x5224;&#x65AD;&#x4E0D;&#x5B58;&#x5728;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;</h5>
 </li>
 </ul>
-<pre><code class="lang-sql">    <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> test1(
-        <span class="hljs-keyword">id</span> <span class="hljs-built_in">INT</span>,
-        <span class="hljs-keyword">name</span> <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">20</span>)
-    );
-    # &#x9A8C;&#x8BC1;&#x662F;&#x5426;&#x6210;&#x529F;&#x521B;&#x5EFA;
-    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">TABLES</span>;
-    DESC test1;
+<pre><code class="lang-sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> test1(
+    <span class="hljs-keyword">id</span> <span class="hljs-built_in">INT</span>,
+    <span class="hljs-keyword">name</span> <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">20</span>)
+);
+# &#x9A8C;&#x8BC1;&#x662F;&#x5426;&#x6210;&#x529F;&#x521B;&#x5EFA;
+<span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">TABLES</span>;
+DESC test1;
 </code></pre>
 <p><img src="img/2-2-4.jpg" alt=" "></p>
 <ul>
@@ -593,22 +593,22 @@
 <blockquote>
 <p>&#x7531;&#x4E8E;&#x4FEE;&#x6539;&#x4E86;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>utf8</code> , &#x4E3A;&#x5C55;&#x793A;&#x6548;&#x679C;&#x6307;&#x5B9A;&#x4E3A; <code>gbk</code></p>
 </blockquote>
-<pre><code class="lang-sql">    <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> test2(
-        <span class="hljs-keyword">id</span> <span class="hljs-built_in">INT</span>,
-        <span class="hljs-keyword">name</span> <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">20</span>)
-    ) <span class="hljs-keyword">CHARSET</span> gbk;
-    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">FULL</span> <span class="hljs-keyword">COLUMNS</span> <span class="hljs-keyword">FROM</span> test2;
+<pre><code class="lang-sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> test2(
+    <span class="hljs-keyword">id</span> <span class="hljs-built_in">INT</span>,
+    <span class="hljs-keyword">name</span> <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">20</span>)
+) <span class="hljs-keyword">CHARSET</span> gbk;
+<span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">FULL</span> <span class="hljs-keyword">COLUMNS</span> <span class="hljs-keyword">FROM</span> test2;
 </code></pre>
 <p><img src="img/2-2-5.jpg" alt=" "></p>
 <ul>
 <li><h5 id="&#x5728;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#x65F6;&#x4E3A;&#x5217;&#x6DFB;&#x52A0;&#x5907;&#x6CE8;&#x4FE1;&#x606F;">&#x5728;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#x65F6;&#x4E3A;&#x5217;&#x6DFB;&#x52A0;&#x5907;&#x6CE8;&#x4FE1;&#x606F;</h5>
 </li>
 </ul>
-<pre><code class="lang-sql">    <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> test3(
-        <span class="hljs-keyword">id</span> <span class="hljs-built_in">INT</span> <span class="hljs-keyword">COMMENT</span> <span class="hljs-string">&apos;&#x5B66;&#x53F7;&apos;</span>,
-        <span class="hljs-keyword">name</span> <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">20</span>) <span class="hljs-keyword">COMMENT</span> <span class="hljs-string">&apos;&#x59D3;&#x540D;&apos;</span>
-    );
-    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">FULL</span> <span class="hljs-keyword">COLUMNS</span> <span class="hljs-keyword">FROM</span> test3;
+<pre><code class="lang-sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> test3(
+    <span class="hljs-keyword">id</span> <span class="hljs-built_in">INT</span> <span class="hljs-keyword">COMMENT</span> <span class="hljs-string">&apos;&#x5B66;&#x53F7;&apos;</span>,
+    <span class="hljs-keyword">name</span> <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">20</span>) <span class="hljs-keyword">COMMENT</span> <span class="hljs-string">&apos;&#x59D3;&#x540D;&apos;</span>
+);
+<span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">FULL</span> <span class="hljs-keyword">COLUMNS</span> <span class="hljs-keyword">FROM</span> test3;
 </code></pre>
 <p><img src="img/2-2-6.jpg" alt=" "></p>
 <h3 id="&#x4FEE;&#x6539;&#x6570;&#x636E;&#x8868;-alter">&#x4FEE;&#x6539;&#x6570;&#x636E;&#x8868; <code>ALTER</code></h3>
@@ -619,71 +619,71 @@
 <li><h4 id="&#x4FEE;&#x6539;&#x5B57;&#x7B26;&#x96C6;--charset">&#x4FEE;&#x6539;&#x5B57;&#x7B26;&#x96C6;  <code>CHARSET</code></h4>
 </li>
 </ul>
-<pre><code class="lang-sql">    # CHARSET &#x662F; CHARACTER <span class="hljs-keyword">SET</span>&#x7684;&#x7F29;&#x5199;
-    <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">CHARSET</span> utf8;
-    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> test2;
+<pre><code class="lang-sql"># CHARSET &#x662F; CHARACTER <span class="hljs-keyword">SET</span>&#x7684;&#x7F29;&#x5199;
+<span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">CHARSET</span> utf8;
+<span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> test2;
 </code></pre>
 <p><img src="img/2-2-7.jpg" alt=" "></p>
 <ul>
 <li><h4 id="&#x4FEE;&#x6539;&#x8868;&#x540D;&#x79F0;--rename">&#x4FEE;&#x6539;&#x8868;&#x540D;&#x79F0;  <code>RENAME</code></h4>
 </li>
 </ul>
-<pre><code class="lang-sql">    <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">RENAME</span> <span class="hljs-keyword">AS</span> test4;
-    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">TABLES</span>;
-    # &#x7B49;&#x6548;
-    <span class="hljs-keyword">RENAME</span> <span class="hljs-keyword">TABLE</span> test4 <span class="hljs-keyword">to</span> test0;
-    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">TABLES</span>;
+<pre><code class="lang-sql"><span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">RENAME</span> <span class="hljs-keyword">AS</span> test4;
+<span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">TABLES</span>;
+# &#x7B49;&#x6548;
+<span class="hljs-keyword">RENAME</span> <span class="hljs-keyword">TABLE</span> test4 <span class="hljs-keyword">to</span> test0;
+<span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">TABLES</span>;
 </code></pre>
 <p><img src="img/2-2-8.jpg" alt=" "></p>
 <ul>
 <li><h4 id="&#x65B0;&#x589E;&#x5B57;&#x6BB5;-add">&#x65B0;&#x589E;&#x5B57;&#x6BB5; <code>ADD</code></h4>
 </li>
 </ul>
-<pre><code class="lang-sql">    # &#x5728;&#x6700;&#x540E;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#xFF1A;
-    <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">ADD</span> gender <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">4</span>);
-    DESC test2;
-    # &#x5728;&#x6700;&#x524D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;
-    <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">ADD</span> major <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">8</span>) <span class="hljs-keyword">FIRST</span>;
-    DESC test2;
-    # &#x4E00;&#x6B21;&#x6DFB;&#x52A0;&#x591A;&#x4E2A;&#x5B57;&#x6BB5;&#xFF1A;
-    <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">ADD</span>(
-            <span class="hljs-keyword">class</span> <span class="hljs-built_in">INT</span>,
-            country <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">16</span>)
-        );
-    DESC test2;
-    # &#x6307;&#x5B9A;&#x5B57;&#x6BB5;&#x540E;&#x6DFB;&#x52A0;&#x5B57;&#x6BB5;&#xFF1A;
-    <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">ADD</span> phone_number <span class="hljs-built_in">INT</span> <span class="hljs-keyword">AFTER</span> <span class="hljs-keyword">class</span>;
-    DESC test2;
+<pre><code class="lang-sql"># &#x5728;&#x6700;&#x540E;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#xFF1A;
+<span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">ADD</span> gender <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">4</span>);
+DESC test2;
+# &#x5728;&#x6700;&#x524D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;
+<span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">ADD</span> major <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">8</span>) <span class="hljs-keyword">FIRST</span>;
+DESC test2;
+# &#x4E00;&#x6B21;&#x6DFB;&#x52A0;&#x591A;&#x4E2A;&#x5B57;&#x6BB5;&#xFF1A;
+<span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">ADD</span>(
+        <span class="hljs-keyword">class</span> <span class="hljs-built_in">INT</span>,
+        country <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">16</span>)
+    );
+DESC test2;
+# &#x6307;&#x5B9A;&#x5B57;&#x6BB5;&#x540E;&#x6DFB;&#x52A0;&#x5B57;&#x6BB5;&#xFF1A;
+<span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">ADD</span> phone_number <span class="hljs-built_in">INT</span> <span class="hljs-keyword">AFTER</span> <span class="hljs-keyword">class</span>;
+DESC test2;
 </code></pre>
 <p><img src="img/2-2-9.jpg" alt=" "></p>
 <ul>
 <li><h4 id="&#x4FEE;&#x6539;&#x5B57;&#x6BB5;-change--modify">&#x4FEE;&#x6539;&#x5B57;&#x6BB5; <code>CHANGE</code> / <code>MODIFY</code></h4>
 <ul>
 <li><p>&#x4FEE;&#x6539;&#x5B57;&#x6BB5;&#x540D;&#xFF1A;</p>
-<pre><code class="lang-sql">  <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">CHANGE</span> major email <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">16</span>);
-  DESC test2;
+<pre><code class="lang-sql"><span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">CHANGE</span> major email <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">16</span>);
+DESC test2;
 </code></pre>
 <p><img src="img/2-2-10.jpg" alt=" "></p>
 </li>
 <li><p>&#x4FEE;&#x6539;&#x5B57;&#x6BB5;&#x7C7B;&#x578B;&#xFF1A;</p>
-<pre><code class="lang-sql">  <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">MODIFY</span> <span class="hljs-keyword">name</span> <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">16</span>);
-  DESC test2;
+<pre><code class="lang-sql"><span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">MODIFY</span> <span class="hljs-keyword">name</span> <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">16</span>);
+DESC test2;
 </code></pre>
 <p><img src="img/2-2-11.jpg" alt=" "></p>
 </li>
 <li><p>&#x4FEE;&#x6539;&#x5B57;&#x6BB5;&#x4F4D;&#x7F6E;&#xFF1A;</p>
-<pre><code class="lang-sql">  <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">MODIFY</span> <span class="hljs-keyword">id</span> <span class="hljs-built_in">INT</span> <span class="hljs-keyword">FIRST</span>;
-  DESC test2;
-  # &#x6307;&#x5B9A;&#x5B57;&#x6BB5;&#x540E;&#x6DFB;&#x52A0;&#x5B57;&#x6BB5;&#xFF1A;
-  <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">MODIFY</span> email <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">16</span>) <span class="hljs-keyword">AFTER</span> phone_number;
-  DESC test2;
+<pre><code class="lang-sql"><span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">MODIFY</span> <span class="hljs-keyword">id</span> <span class="hljs-built_in">INT</span> <span class="hljs-keyword">FIRST</span>;
+DESC test2;
+# &#x6307;&#x5B9A;&#x5B57;&#x6BB5;&#x540E;&#x6DFB;&#x52A0;&#x5B57;&#x6BB5;&#xFF1A;
+<span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">MODIFY</span> email <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">16</span>) <span class="hljs-keyword">AFTER</span> phone_number;
+DESC test2;
 </code></pre>
 <p><img src="img/2-2-12.jpg" alt=" "></p>
 </li>
 <li><p>&#x4FEE;&#x6539;&#x5B57;&#x6BB5;&#x5B57;&#x7B26;&#x96C6;&#xFF1A;</p>
-<pre><code class="lang-sql">  <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">FULL</span> <span class="hljs-keyword">COLUMNS</span> <span class="hljs-keyword">FROM</span> test2;
-  <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">MODIFY</span> <span class="hljs-keyword">name</span> <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">16</span>) <span class="hljs-keyword">CHARSET</span> gbk;
-  <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">FULL</span> <span class="hljs-keyword">COLUMNS</span> <span class="hljs-keyword">FROM</span> test2;
+<pre><code class="lang-sql"><span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">FULL</span> <span class="hljs-keyword">COLUMNS</span> <span class="hljs-keyword">FROM</span> test2;
+<span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">MODIFY</span> <span class="hljs-keyword">name</span> <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">16</span>) <span class="hljs-keyword">CHARSET</span> gbk;
+<span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">FULL</span> <span class="hljs-keyword">COLUMNS</span> <span class="hljs-keyword">FROM</span> test2;
 </code></pre>
 <p><img src="img/2-2-13.jpg" alt=" "></p>
 </li>
@@ -692,24 +692,24 @@
 <li><h4 id="&#x5220;&#x9664;&#x5B57;&#x6BB5;-drop">&#x5220;&#x9664;&#x5B57;&#x6BB5; <code>DROP</code></h4>
 </li>
 </ul>
-<pre><code class="lang-sql">    # `COLUMN` &#x53EF;&#x7701;&#x7565;
-    <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">DROP</span> <span class="hljs-keyword">COLUMN</span> country;
-    DESC test2;
-    # &#x5220;&#x9664;&#x591A;&#x4E2A;&#x5B57;&#x6BB5;
-    <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2
-        <span class="hljs-keyword">DROP</span> gender,
-        <span class="hljs-keyword">DROP</span> <span class="hljs-keyword">class</span>,
-        <span class="hljs-keyword">DROP</span> email,
-        <span class="hljs-keyword">DROP</span> phone_number;
-    DESC test2;
+<pre><code class="lang-sql"># `COLUMN` &#x53EF;&#x7701;&#x7565;
+<span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">DROP</span> <span class="hljs-keyword">COLUMN</span> country;
+DESC test2;
+# &#x5220;&#x9664;&#x591A;&#x4E2A;&#x5B57;&#x6BB5;
+<span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2
+    <span class="hljs-keyword">DROP</span> gender,
+    <span class="hljs-keyword">DROP</span> <span class="hljs-keyword">class</span>,
+    <span class="hljs-keyword">DROP</span> email,
+    <span class="hljs-keyword">DROP</span> phone_number;
+DESC test2;
 </code></pre>
 <p><img src="img/2-2-14.jpg" alt=" "></p>
 <h3 id="&#x5220;&#x9664;&#x6570;&#x636E;&#x8868;-drop">&#x5220;&#x9664;&#x6570;&#x636E;&#x8868; <code>DROP</code></h3>
-<pre><code class="lang-sql">    <span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">EXISTS</span> test2;
-    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">TABLES</span>;
-    # &#x4E00;&#x6B21;&#x6027;&#x5220;&#x9664;&#x591A;&#x4E2A;&#x6570;&#x636E;&#x8868;
-    <span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TABLE</span> test1, test3;
-    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">TABLES</span>;
+<pre><code class="lang-sql"><span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">EXISTS</span> test2;
+<span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">TABLES</span>;
+# &#x4E00;&#x6B21;&#x6027;&#x5220;&#x9664;&#x591A;&#x4E2A;&#x6570;&#x636E;&#x8868;
+<span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TABLE</span> test1, test3;
+<span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">TABLES</span>;
 </code></pre>
 <p><img src="img/2-2-15.jpg" alt=" "></p>
 <blockquote>
@@ -758,7 +758,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2.2 数据表操作","level":"1.3.2","depth":2,"next":{"title":"2.3 数据表数据操作","level":"1.3.3","depth":2,"path":"chapter2/2-3.md","ref":"chapter2/2-3.md","articles":[]},"previous":{"title":"2.1 数据库操作","level":"1.3.1","depth":2,"path":"chapter2/2-1.md","ref":"chapter2/2-1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"code":{"copyButtons":false},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Cosmo Clara","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":31,"left":31,"top":24,"bottom":24}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"chapter2/2-2.md","mtime":"2024-05-08T10:56:34.302Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-05-20T07:09:30.230Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2.2 数据表操作","level":"1.3.2","depth":2,"next":{"title":"2.3 数据表数据操作","level":"1.3.3","depth":2,"path":"chapter2/2-3.md","ref":"chapter2/2-3.md","articles":[]},"previous":{"title":"2.1 数据库操作","level":"1.3.1","depth":2,"path":"chapter2/2-1.md","ref":"chapter2/2-1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"code":{"copyButtons":false},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Cosmo Clara","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":31,"left":31,"top":24,"bottom":24}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"chapter2/2-2.md","mtime":"2024-05-20T07:23:45.194Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-05-20T07:29:44.415Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

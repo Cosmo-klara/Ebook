@@ -565,19 +565,19 @@
 <h3 id="&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x7684;&#x4F7F;&#x7528;&#x6D41;&#x7A0B;">&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x7684;&#x4F7F;&#x7528;&#x6D41;&#x7A0B;</h3>
 <p>&#x521B;&#x5EFA;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B; &#x2014;&#x2014; &#x8C03;&#x7528;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B; &#x2014;&#x2014; &#x663E;&#x793A;&#x6D41;&#x7A0B;&#x7ED3;&#x679C;</p>
 <h4 id="&#x8BED;&#x6CD5;">&#x8BED;&#x6CD5;</h4>
-<pre><code class="lang-sql">    # &#x521B;&#x5EFA;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;
-    <span class="hljs-keyword">CREATE</span> 
-    [DEFINER = <span class="hljs-string">&apos;user_name&apos;</span>@<span class="hljs-string">&apos;host_name&apos;</span>]
-    [<span class="hljs-keyword">SQL</span> <span class="hljs-keyword">SECURITY</span> { DEFINER | INVOKER }]
-    <span class="hljs-keyword">PROCEDURE</span> &#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x540D;( &#x53C2;&#x6570;&#x7C7B;&#x578B; &#x53D8;&#x91CF;&#x540D; &#x53D8;&#x91CF;&#x7C7B;&#x578B;, ... )
-    <span class="hljs-keyword">BEGIN</span>
-        [<span class="hljs-keyword">DECLARE</span> &#x53D8;&#x91CF;&#x540D; &#x7C7B;&#x578B; [<span class="hljs-keyword">DEFAULT</span> &#x503C;];]
-        &#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x7684;&#x8BED;&#x53E5;&#x5757;;
-    <span class="hljs-keyword">END</span>;
-    # &#x8C03;&#x7528;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#xFF0C;@result &#x4E3A;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x8FD4;&#x56DE;&#x503C;&#x4E5F;&#x5C31;&#x662F; OUT &#x53C2;&#x6570;&#x8FD4;&#x56DE;&#x7684;&#x503C;
-    <span class="hljs-keyword">CALL</span> &#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x540D;(&#x53C2;&#x6570;&#x5217;&#x8868;, @<span class="hljs-keyword">result</span>);
-    # &#x663E;&#x793A;&#x6D41;&#x7A0B;&#x7ED3;&#x679C;
-    <span class="hljs-keyword">SELECT</span> @<span class="hljs-keyword">result</span>;
+<pre><code class="lang-sql"># &#x521B;&#x5EFA;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;
+<span class="hljs-keyword">CREATE</span> 
+[DEFINER = <span class="hljs-string">&apos;user_name&apos;</span>@<span class="hljs-string">&apos;host_name&apos;</span>]
+[<span class="hljs-keyword">SQL</span> <span class="hljs-keyword">SECURITY</span> { DEFINER | INVOKER }]
+<span class="hljs-keyword">PROCEDURE</span> &#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x540D;( &#x53C2;&#x6570;&#x7C7B;&#x578B; &#x53D8;&#x91CF;&#x540D; &#x53D8;&#x91CF;&#x7C7B;&#x578B;, ... )
+<span class="hljs-keyword">BEGIN</span>
+    [<span class="hljs-keyword">DECLARE</span> &#x53D8;&#x91CF;&#x540D; &#x7C7B;&#x578B; [<span class="hljs-keyword">DEFAULT</span> &#x503C;];]
+    &#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x7684;&#x8BED;&#x53E5;&#x5757;;
+<span class="hljs-keyword">END</span>;
+# &#x8C03;&#x7528;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#xFF0C;@result &#x4E3A;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x8FD4;&#x56DE;&#x503C;&#x4E5F;&#x5C31;&#x662F; OUT &#x53C2;&#x6570;&#x8FD4;&#x56DE;&#x7684;&#x503C;
+<span class="hljs-keyword">CALL</span> &#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x540D;(&#x53C2;&#x6570;&#x5217;&#x8868;, @<span class="hljs-keyword">result</span>);
+# &#x663E;&#x793A;&#x6D41;&#x7A0B;&#x7ED3;&#x679C;
+<span class="hljs-keyword">SELECT</span> @<span class="hljs-keyword">result</span>;
 </code></pre>
 <p>DEFINER =  &#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x5B9A;&#x4E49;&#x8005;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x5F53;&#x524D;&#x7528;&#x6237;&#x3002;</p>
 <p>SQL SECURITY { DEFINER | INVOKER }&#xFF1A;&#x9009;&#x62E9;&#x8C03;&#x7528;&#x65F6;&#x7684;&#x4F7F;&#x7528;&#x6743;&#x9650;&#xFF0C;DEFINER &#x8868;&#x793A;&#x4F7F;&#x7528;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x5B9A;&#x4E49;&#x8005;&#x7684;&#x6743;&#x9650;&#xFF0C;INVOKER &#x8868;&#x793A;&#x4F7F;&#x7528;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x8C03;&#x7528;&#x8005;&#x7684;&#x6743;&#x9650;&#x3002;</p>
@@ -592,43 +592,43 @@
 </ul>
 <p>DECLARE &#x4E2D;&#x7528;&#x6765;&#x58F0;&#x660E;&#x53D8;&#x91CF;&#xFF0C;&#x53D8;&#x91CF;&#x9ED8;&#x8BA4;&#x8D4B;&#x503C;&#x4F7F;&#x7528;&#x7684; DEFAULT&#xFF0C;&#x8BED;&#x53E5;&#x5757;&#x4E2D;&#x6539;&#x53D8;&#x53D8;&#x91CF;&#x503C;&#xFF0C;&#x4F7F;&#x7528; SET &#x53D8;&#x91CF; = &#x503C;&#xFF1B;</p>
 <h4 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h4>
-<pre><code class="lang-sql">    CREATE PROCEDURE try_select(IN t1 INT,OUT t2 INT)
-        BEGIN
-            DECLARE i INT DEFAULT 1;
-            SET t2 = 0;
-            WHILE i &lt;= t1
-                DO
-                SET t2 = t2 + i;
-                SET i = i + 1;
-                END WHILE;
-        END;
-    # &#x8C03;&#x7528;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B; try_select(IN t1 INT,OUT t2 INT);
-    CALL try_select(5 ,@result);
-    SELECT @result;
+<pre><code class="lang-sql">CREATE PROCEDURE try_select(IN t1 INT,OUT t2 INT)
+    BEGIN
+        DECLARE i INT DEFAULT 1;
+        SET t2 = 0;
+        WHILE i &lt;= t1
+            DO
+            SET t2 = t2 + i;
+            SET i = i + 1;
+            END WHILE;
+    END;
+# &#x8C03;&#x7528;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B; try_select(IN t1 INT,OUT t2 INT);
+CALL try_select(5 ,@result);
+SELECT @result;
 </code></pre>
 <p><img src="img/4-4-1.png" alt=" "></p>
 <h3 id="&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x7684;&#x7BA1;&#x7406;">&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x7684;&#x7BA1;&#x7406;</h3>
 <ul>
 <li>&#x67E5;&#x770B;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;</li>
 </ul>
-<pre><code class="lang-sql">    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">PROCEDURE</span> <span class="hljs-keyword">STATUS</span>;
-    # &#x67E5;&#x770B;&#x7279;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#x7684;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;
-    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">PROCEDURE</span> <span class="hljs-keyword">STATUS</span> <span class="hljs-keyword">WHERE</span> DB = <span class="hljs-string">&apos;game&apos;</span>;
-    # &#x67E5;&#x770B;&#x7279;&#x5B9A;&#x540D;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;
-    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">PROCEDURE</span> <span class="hljs-keyword">STATUS</span> <span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">name</span> <span class="hljs-keyword">LIKE</span> <span class="hljs-string">&apos;ps%&apos;</span>;
+<pre><code class="lang-sql"><span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">PROCEDURE</span> <span class="hljs-keyword">STATUS</span>;
+# &#x67E5;&#x770B;&#x7279;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#x7684;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;
+<span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">PROCEDURE</span> <span class="hljs-keyword">STATUS</span> <span class="hljs-keyword">WHERE</span> DB = <span class="hljs-string">&apos;game&apos;</span>;
+# &#x67E5;&#x770B;&#x7279;&#x5B9A;&#x540D;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;
+<span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">PROCEDURE</span> <span class="hljs-keyword">STATUS</span> <span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">name</span> <span class="hljs-keyword">LIKE</span> <span class="hljs-string">&apos;ps%&apos;</span>;
 </code></pre>
 <p><img src="img/4-4-2.png" alt=" "></p>
 <ul>
 <li>&#x663E;&#x793A;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x521B;&#x5EFA;&#x4EE3;&#x7801;</li>
 </ul>
-<pre><code class="lang-sql">    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">PROCEDURE</span> try_select;
+<pre><code class="lang-sql"><span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">PROCEDURE</span> try_select;
 </code></pre>
 <p><img src="img/4-4-3.png" alt=" "></p>
 <ul>
 <li>&#x5220;&#x9664;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;</li>
 </ul>
-<pre><code class="lang-sql">    <span class="hljs-keyword">DROP</span> <span class="hljs-keyword">PROCEDURE</span> try_select;
-    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">PROCEDURE</span> <span class="hljs-keyword">STATUS</span> <span class="hljs-keyword">WHERE</span> DB = <span class="hljs-string">&apos;game&apos;</span>;
+<pre><code class="lang-sql"><span class="hljs-keyword">DROP</span> <span class="hljs-keyword">PROCEDURE</span> try_select;
+<span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">PROCEDURE</span> <span class="hljs-keyword">STATUS</span> <span class="hljs-keyword">WHERE</span> DB = <span class="hljs-string">&apos;game&apos;</span>;
 </code></pre>
 <p><img src="img/4-4-4.png" alt=" "></p>
 
@@ -674,7 +674,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4.4 存储过程","level":"1.5.4","depth":2,"next":{"title":"第五章 数据库管理","level":"1.6","depth":1,"path":"chapter5/README.md","ref":"chapter5/README.md","articles":[{"title":"5.1 用户管理基础","level":"1.6.1","depth":2,"path":"chapter5/5-1.md","ref":"chapter5/5-1.md","articles":[]},{"title":"5.2 用户管理进阶","level":"1.6.2","depth":2,"path":"chapter5/5-2.md","ref":"chapter5/5-2.md","articles":[]},{"title":"5.3 权限管理","level":"1.6.3","depth":2,"path":"chapter5/5-3.md","ref":"chapter5/5-3.md","articles":[]},{"title":"5.4 维护表","level":"1.6.4","depth":2,"path":"chapter5/5-4.md","ref":"chapter5/5-4.md","articles":[]},{"title":"5.5 备份与恢复","level":"1.6.5","depth":2,"path":"chapter5/5-5.md","ref":"chapter5/5-5.md","articles":[]}]},"previous":{"title":"4.3 触发器","level":"1.5.3","depth":2,"path":"chapter4/4-3.md","ref":"chapter4/4-3.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"code":{"copyButtons":false},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Cosmo Clara","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":31,"left":31,"top":24,"bottom":24}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"chapter4/4-4.md","mtime":"2024-05-19T12:53:16.163Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-05-20T07:09:30.230Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4.4 存储过程","level":"1.5.4","depth":2,"next":{"title":"第五章 数据库管理","level":"1.6","depth":1,"path":"chapter5/README.md","ref":"chapter5/README.md","articles":[{"title":"5.1 用户管理基础","level":"1.6.1","depth":2,"path":"chapter5/5-1.md","ref":"chapter5/5-1.md","articles":[]},{"title":"5.2 用户管理进阶","level":"1.6.2","depth":2,"path":"chapter5/5-2.md","ref":"chapter5/5-2.md","articles":[]},{"title":"5.3 权限管理","level":"1.6.3","depth":2,"path":"chapter5/5-3.md","ref":"chapter5/5-3.md","articles":[]},{"title":"5.4 维护表","level":"1.6.4","depth":2,"path":"chapter5/5-4.md","ref":"chapter5/5-4.md","articles":[]},{"title":"5.5 备份与恢复","level":"1.6.5","depth":2,"path":"chapter5/5-5.md","ref":"chapter5/5-5.md","articles":[]}]},"previous":{"title":"4.3 触发器","level":"1.5.3","depth":2,"path":"chapter4/4-3.md","ref":"chapter4/4-3.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"code":{"copyButtons":false},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Cosmo Clara","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":31,"left":31,"top":24,"bottom":24}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"chapter4/4-4.md","mtime":"2024-05-20T07:19:37.652Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-05-20T07:29:44.415Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

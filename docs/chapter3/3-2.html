@@ -539,11 +539,11 @@
 <li><h4 id="&#x62FC;&#x63A5;-concat-">&#x62FC;&#x63A5; CONCAT( )</h4>
 <ul>
 <li><p>&#x5B57;&#x6BB5;&#x4E0E;&#x5B57;&#x6BB5;&#x62FC;&#x63A5;</p>
-<pre><code class="lang-sql">  <span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">CONCAT</span>(p_name, p_id) <span class="hljs-keyword">FROM</span> players;
+<pre><code class="lang-sql"><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">CONCAT</span>(p_name, p_id) <span class="hljs-keyword">FROM</span> players;
 </code></pre>
 </li>
 <li><p>&#x5B57;&#x7B26;&#x4E0E;&#x5B57;&#x6BB5;&#x62FC;&#x63A5;</p>
-<pre><code class="lang-sql">  <span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">CONCAT</span>(<span class="hljs-string">&apos;&#x6602;&#x8D35;&#x7684;&apos;</span>, i_name)  <span class="hljs-keyword">FROM</span> items <span class="hljs-keyword">WHERE</span> i_name REGEXP <span class="hljs-string">&apos;&#x91D1;&apos;</span>;
+<pre><code class="lang-sql"><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">CONCAT</span>(<span class="hljs-string">&apos;&#x6602;&#x8D35;&#x7684;&apos;</span>, i_name)  <span class="hljs-keyword">FROM</span> items <span class="hljs-keyword">WHERE</span> i_name REGEXP <span class="hljs-string">&apos;&#x91D1;&apos;</span>;
 </code></pre>
 </li>
 </ul>
@@ -558,14 +558,14 @@
 <p>&#x62FC;&#x63A5;&#x540E;&#x5B57;&#x6BB5;&#x540D;&#x6D88;&#x5931;&#xFF0C;MySQL &#x4E0D;&#x65B9;&#x4FBF;&#x8BC6;&#x522B;&#xFF0C;&#x56E0;&#x6B64;&#x4F7F;&#x7528;&#x5B57;&#x6BB5;&#x522B;&#x540D;</p>
 <p>&#x53EF;&#x4EE5;&#x7701;&#x7565; <code>AS</code>&#xFF0C;&#x4F46;&#x662F;&#x4E3A;&#x4E86;&#x89C4;&#x8303;&#x6211;&#x4EEC;&#x4E0D;&#x7701;&#x7565; <code>AS</code></p>
 </blockquote>
-<pre><code class="lang-sql">    <span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">CONCAT</span>(p_id, p_name) <span class="hljs-keyword">AS</span> &#x73A9;&#x5BB6;&#x59D3;&#x540D;<span class="hljs-keyword">id</span> <span class="hljs-keyword">FROM</span> players;
+<pre><code class="lang-sql"><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">CONCAT</span>(p_id, p_name) <span class="hljs-keyword">AS</span> &#x73A9;&#x5BB6;&#x59D3;&#x540D;<span class="hljs-keyword">id</span> <span class="hljs-keyword">FROM</span> players;
 </code></pre>
 <p><img src="img/3-2-2.png" alt=" "></p>
 <ul>
 <li><h4 id="&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#xFF1A;----">&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#xFF1A;+ - * /</h4>
 </li>
 </ul>
-<pre><code class="lang-sql">    <span class="hljs-keyword">SELECT</span> p_id, p_name, <span class="hljs-keyword">YEAR</span>(<span class="hljs-keyword">NOW</span>()) - <span class="hljs-keyword">YEAR</span>(registration_time) <span class="hljs-keyword">AS</span> &#x6CE8;&#x518C;&#x65F6;&#x957F; <span class="hljs-keyword">FROM</span> players;
+<pre><code class="lang-sql"><span class="hljs-keyword">SELECT</span> p_id, p_name, <span class="hljs-keyword">YEAR</span>(<span class="hljs-keyword">NOW</span>()) - <span class="hljs-keyword">YEAR</span>(registration_time) <span class="hljs-keyword">AS</span> &#x6CE8;&#x518C;&#x65F6;&#x957F; <span class="hljs-keyword">FROM</span> players;
 </code></pre>
 <p><img src="img/3-2-3.png" alt=" "></p>
 <h3 id="&#x4F7F;&#x7528;&#x51FD;&#x6570;"><strong>&#x4F7F;&#x7528;&#x51FD;&#x6570;</strong></h3>
@@ -715,8 +715,8 @@
 <p><code>null</code> &#x503C;&#x5B57;&#x6BB5;&#x4E0D;&#x53C2;&#x4E0E;&#x8FD0;&#x7B97;&#xFF0C;&#x56E0;&#x6B64;&#x9009;&#x53D6;&#x8BA1;&#x7B97;&#x7684;&#x5B57;&#x6BB5;&#x65F6;&#x4E00;&#x822C;&#x9009;&#x62E9;&#x975E;&#x7A7A;&#x5B57;&#x6BB5;&#xFF0C;&#x5982;&#x4E3B;&#x952E;&#x6216;&#x4E3B;&#x5C5E;&#x6027;(id)</p>
 </blockquote>
 <p>  <code>COUNT( )</code> &#x51FD;&#x6570;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>DISTINCT</code> &#x5173;&#x952E;&#x5B57;&#x6765;&#x5FFD;&#x7565;&#x91CD;&#x590D;&#x9879;&#xFF0C;&#x7EDF;&#x8BA1;&#x6570;&#x76EE;&#xFF0C;&#x6BD4;&#x5982;</p>
-<pre><code class="lang-sql">      # &#x7EDF;&#x8BA1;&#x4EA4;&#x6613;&#x8BB0;&#x5F55;&#x4E2D;&#x6709;&#x591A;&#x5C11;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x7269;&#x54C1;
-      <span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">COUNT</span>(<span class="hljs-keyword">DISTINCT</span> ri_id) <span class="hljs-keyword">AS</span> &#x4EA4;&#x6613;&#x8BB0;&#x5F55;&#x7269;&#x54C1;&#x7C7B;&#x522B;&#x6570; <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">records</span>;
+<pre><code class="lang-sql">  # &#x7EDF;&#x8BA1;&#x4EA4;&#x6613;&#x8BB0;&#x5F55;&#x4E2D;&#x6709;&#x591A;&#x5C11;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x7269;&#x54C1;
+  <span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">COUNT</span>(<span class="hljs-keyword">DISTINCT</span> ri_id) <span class="hljs-keyword">AS</span> &#x4EA4;&#x6613;&#x8BB0;&#x5F55;&#x7269;&#x54C1;&#x7C7B;&#x522B;&#x6570; <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">records</span>;
 </code></pre>
 </li>
 </ul>
@@ -775,7 +775,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3.2 查询函数","level":"1.4.2","depth":2,"next":{"title":"3.3 分组与排序","level":"1.4.3","depth":2,"path":"chapter3/3-3.md","ref":"chapter3/3-3.md","articles":[]},"previous":{"title":"3.1 基本查询","level":"1.4.1","depth":2,"path":"chapter3/3-1.md","ref":"chapter3/3-1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"code":{"copyButtons":false},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Cosmo Clara","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":31,"left":31,"top":24,"bottom":24}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"chapter3/3-2.md","mtime":"2024-05-20T01:58:49.220Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-05-20T07:09:30.230Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3.2 查询函数","level":"1.4.2","depth":2,"next":{"title":"3.3 分组与排序","level":"1.4.3","depth":2,"path":"chapter3/3-3.md","ref":"chapter3/3-3.md","articles":[]},"previous":{"title":"3.1 基本查询","level":"1.4.1","depth":2,"path":"chapter3/3-1.md","ref":"chapter3/3-1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"code":{"copyButtons":false},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Cosmo Clara","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":31,"left":31,"top":24,"bottom":24}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"chapter3/3-2.md","mtime":"2024-05-20T07:20:39.741Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-05-20T07:29:44.415Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

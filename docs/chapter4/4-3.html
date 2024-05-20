@@ -554,10 +554,10 @@
 <p>&#x57FA;&#x4E8E;&#x4E00;&#x4E2A;&#x8868;&#x521B;&#x5EFA;&#xFF0C;&#x5BF9;&#x591A;&#x4E2A;&#x8868;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x3002;</p>
 </blockquote>
 <h4 id="&#x8BED;&#x6CD5;&#xFF1A;">&#x8BED;&#x6CD5;&#xFF1A;</h4>
-<pre><code class="lang-sql">    <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TRIGGER</span> trigger_name
-    [ <span class="hljs-keyword">BEFORE</span> / <span class="hljs-keyword">AFTER</span> ] [ <span class="hljs-keyword">INSERT</span> / <span class="hljs-keyword">UPDATE</span> / <span class="hljs-keyword">DELETE</span> ] <span class="hljs-keyword">ON</span> table_name
-    <span class="hljs-keyword">FOR</span> <span class="hljs-keyword">EACH</span> <span class="hljs-keyword">ROW</span>
-    trigger_body
+<pre><code class="lang-sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TRIGGER</span> trigger_name
+[ <span class="hljs-keyword">BEFORE</span> / <span class="hljs-keyword">AFTER</span> ] [ <span class="hljs-keyword">INSERT</span> / <span class="hljs-keyword">UPDATE</span> / <span class="hljs-keyword">DELETE</span> ] <span class="hljs-keyword">ON</span> table_name
+<span class="hljs-keyword">FOR</span> <span class="hljs-keyword">EACH</span> <span class="hljs-keyword">ROW</span>
+trigger_body
 </code></pre>
 <p>&#x5176;&#x4E2D;&#xFF0C;</p>
 <ul>
@@ -580,51 +580,51 @@
 <p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x540C;&#x8868;&#x66F4;&#x65B0;&#x4E0D;&#x80FD;&#x4F7F;&#x7528; <code>UPDATE</code> &#x548C; <code>INSERT</code> &#x6765;&#x8FDB;&#x884C;&#x89E6;&#x53D1;&#x64CD;&#x4F5C;&#xFF0C;&#x907F;&#x514D;&#x9012;&#x5F52;&#x89E6;&#x53D1;</p>
 <p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x5728; AFTER &#x89E6;&#x53D1;&#x5668;&#x4E2D;&#xFF0C;NEW &#x7684;&#x8D4B;&#x503C;&#x5DF2;&#x7ECF;&#x7ED3;&#x675F;&#x4E86;&#xFF0C;&#x53EA;&#x80FD;&#x8BFB;&#x53D6;&#x5185;&#x5BB9;&#xFF0C;&#x56E0;&#x6B64;&#x53EA;&#x80FD;&#x5728;BEFORE &#x89E6;&#x53D1;&#x5668;&#x4E2D;&#x4FEE;&#x6539; NEW &#x7684;&#x503C;&#x3002;</p>
 </blockquote>
-<pre><code class="lang-sql">    #  &#x5F53;&#x7136;&#x76F4;&#x63A5;&#x5C06; status &#x5217;&#x7684;&#x503C;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x4E3A; 0 &#x662F;&#x4E00;&#x4E2A;&#x66F4;&#x597D;&#x7684;&#x9009;&#x62E9;
-    <span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">records</span>;
-    # <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">records</span>(..);( &#x7701;&#x7565;&#xFF0C;&#x53C2;&#x89C1;&#x4E0A;&#x4E00;&#x7AE0;&#x8282;&#x672B;&#x5C3E;&#x7684;[&#x4EE3;&#x7801;](./code/game.sql))
-    <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">records</span> <span class="hljs-keyword">ADD</span> <span class="hljs-keyword">status</span> TINYINT(<span class="hljs-number">1</span>);
-    <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TRIGGER</span> records_after_insert
-    <span class="hljs-keyword">BEFORE</span> <span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">ON</span> <span class="hljs-keyword">records</span>
-    <span class="hljs-keyword">FOR</span> <span class="hljs-keyword">EACH</span> <span class="hljs-keyword">ROW</span>
-    <span class="hljs-keyword">BEGIN</span>
-        <span class="hljs-keyword">SET</span> <span class="hljs-keyword">NEW</span>.<span class="hljs-keyword">status</span> = <span class="hljs-literal">FALSE</span>;
-    <span class="hljs-keyword">END</span>;
-    # <span class="hljs-keyword">INSERT</span>...( &#x7701;&#x7565;&#xFF0C;&#x53C2;&#x89C1;&#x4E0A;&#x4E00;&#x7AE0;&#x8282;&#x672B;&#x5C3E;&#x7684;[&#x4EE3;&#x7801;](./code/game.<span class="hljs-keyword">sql</span>))
-    <span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">records</span>;
+<pre><code class="lang-sql">#  &#x5F53;&#x7136;&#x76F4;&#x63A5;&#x5C06; status &#x5217;&#x7684;&#x503C;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x4E3A; 0 &#x662F;&#x4E00;&#x4E2A;&#x66F4;&#x597D;&#x7684;&#x9009;&#x62E9;
+<span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">records</span>;
+# <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">records</span>(..);( &#x7701;&#x7565;&#xFF0C;&#x53C2;&#x89C1;&#x4E0A;&#x4E00;&#x7AE0;&#x8282;&#x672B;&#x5C3E;&#x7684;[&#x4EE3;&#x7801;](./code/game.sql))
+<span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">records</span> <span class="hljs-keyword">ADD</span> <span class="hljs-keyword">status</span> TINYINT(<span class="hljs-number">1</span>);
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TRIGGER</span> records_after_insert
+<span class="hljs-keyword">BEFORE</span> <span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">ON</span> <span class="hljs-keyword">records</span>
+<span class="hljs-keyword">FOR</span> <span class="hljs-keyword">EACH</span> <span class="hljs-keyword">ROW</span>
+<span class="hljs-keyword">BEGIN</span>
+    <span class="hljs-keyword">SET</span> <span class="hljs-keyword">NEW</span>.<span class="hljs-keyword">status</span> = <span class="hljs-literal">FALSE</span>;
+<span class="hljs-keyword">END</span>;
+# <span class="hljs-keyword">INSERT</span>...( &#x7701;&#x7565;&#xFF0C;&#x53C2;&#x89C1;&#x4E0A;&#x4E00;&#x7AE0;&#x8282;&#x672B;&#x5C3E;&#x7684;[&#x4EE3;&#x7801;](./code/game.<span class="hljs-keyword">sql</span>))
+<span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">records</span>;
 </code></pre>
 <p><img src="img/4-3-1.png" alt=""></p>
 <p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x5728;&#x63D2;&#x5165;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x89E6;&#x53D1;&#x5668;&#x81EA;&#x52A8;&#x5C06; status &#x5217;&#x7684;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A; 0&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x6B64;&#x5904;&#x5E76;&#x4E0D;&#x7B97;&#x662F;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#xFF0C;&#x800C;&#x662F;&#x4E3A;&#x4E86;&#x6F14;&#x793A;&#x89E6;&#x53D1;&#x5668;&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x4E1A;&#x52A1;&#x6240;&#x9762;&#x5411;&#x7684;&#x63D2;&#x5165;&#x5E94;&#x8BE5;&#x662F;&#x6CA1;&#x6709; buyer_id &#x548C; time &#x7B49;&#x5217;&#x503C;&#x7684;&#xFF0C;&#x800C;&#x662F;&#x901A;&#x8FC7;&#x89E6;&#x53D1;&#x5668;&#x6216;&#x8005;&#x4E1A;&#x52A1;&#x4EE3;&#x7801;&#x6765;&#x8865;&#x5145;&#x8FD9;&#x4E9B;&#x5217;&#x7684;&#x503C;&#x3002;</p>
 <p>&#x4E0B;&#x9762;&#x5C55;&#x793A;UPDATE &#x89E6;&#x53D1;&#x5668;&#xFF1A;</p>
-<pre><code class="lang-sql">    # &#x66F4;&#x65B0;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x9ED8;&#x8BA4;&#x66F4;&#x65B0;&#x7684;&#x662F; buyer_id&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x9ED8;&#x8BA4;&#x6B64;&#x5904;&#x4E1A;&#x52A1;&#x65F6;&#x4EA4;&#x6613;&#x5B8C;&#x6210;
-    <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TRIGGER</span> records_before_update
-        <span class="hljs-keyword">BEFORE</span> <span class="hljs-keyword">UPDATE</span> <span class="hljs-keyword">ON</span> <span class="hljs-keyword">records</span>
-        <span class="hljs-keyword">FOR</span> <span class="hljs-keyword">EACH</span> <span class="hljs-keyword">ROW</span>
-        <span class="hljs-keyword">BEGIN</span>
-            <span class="hljs-keyword">SET</span>
-                <span class="hljs-keyword">NEW</span>.<span class="hljs-keyword">status</span> = <span class="hljs-literal">TRUE</span>,
-                <span class="hljs-keyword">NEW</span>.closing_time = <span class="hljs-keyword">CURRENT_DATE</span>;
-        <span class="hljs-keyword">END</span>;
+<pre><code class="lang-sql"># &#x66F4;&#x65B0;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x9ED8;&#x8BA4;&#x66F4;&#x65B0;&#x7684;&#x662F; buyer_id&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x9ED8;&#x8BA4;&#x6B64;&#x5904;&#x4E1A;&#x52A1;&#x65F6;&#x4EA4;&#x6613;&#x5B8C;&#x6210;
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TRIGGER</span> records_before_update
+    <span class="hljs-keyword">BEFORE</span> <span class="hljs-keyword">UPDATE</span> <span class="hljs-keyword">ON</span> <span class="hljs-keyword">records</span>
+    <span class="hljs-keyword">FOR</span> <span class="hljs-keyword">EACH</span> <span class="hljs-keyword">ROW</span>
+    <span class="hljs-keyword">BEGIN</span>
+        <span class="hljs-keyword">SET</span>
+            <span class="hljs-keyword">NEW</span>.<span class="hljs-keyword">status</span> = <span class="hljs-literal">TRUE</span>,
+            <span class="hljs-keyword">NEW</span>.closing_time = <span class="hljs-keyword">CURRENT_DATE</span>;
+    <span class="hljs-keyword">END</span>;
 
-    <span class="hljs-keyword">UPDATE</span> <span class="hljs-keyword">records</span> <span class="hljs-keyword">SET</span> buyer_id = <span class="hljs-number">10003</span> <span class="hljs-keyword">WHERE</span> r_id = <span class="hljs-number">100002</span>;
-    <span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">records</span>;
+<span class="hljs-keyword">UPDATE</span> <span class="hljs-keyword">records</span> <span class="hljs-keyword">SET</span> buyer_id = <span class="hljs-number">10003</span> <span class="hljs-keyword">WHERE</span> r_id = <span class="hljs-number">100002</span>;
+<span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">records</span>;
 </code></pre>
 <p><img src="img/4-3-2.png" alt=""></p>
 <p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x5728;&#x66F4;&#x65B0;&#x6570;&#x636E;&#x540E;&#xFF0C;&#x89E6;&#x53D1;&#x5668;&#x81EA;&#x52A8;&#x5C06; status &#x5217;&#x7684;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A; 1&#xFF0C;&#x540C;&#x65F6;&#x5C06; closing_time &#x5217;&#x7684;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A;&#x5F53;&#x524D;&#x65E5;&#x671F;&#x3002;</p>
 <p>&#x4E0A;&#x9762;&#x5C55;&#x793A;&#x7684;&#x4E24;&#x4E2A;&#x89E6;&#x53D1;&#x5668;&#x90FD;&#x662F;&#x5BF9;&#x81EA;&#x8EAB;&#x8868;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#xFF0C;&#x4E0B;&#x9762;&#x5C06;&#x5728; players &#x8868;&#x4E2D;&#x5B9A;&#x4E49; DELETE &#x89E6;&#x53D1;&#x5668;&#x6765;&#x6F14;&#x793A;&#x5BF9; records &#x8868;&#x7684;&#x64CD;&#x4F5C;&#xFF1A;</p>
-<pre><code class="lang-sql">    # &#x7531;&#x4E8E;&#x8868;&#x4E2D;&#x5B58;&#x5728;&#x5916;&#x952E;&#x5173;&#x7CFB;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x5148;&#x5220;&#x9664;&#x5916;&#x952E;&#x5173;&#x7CFB;&#xFF0C;&#x518D;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;
-    <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">records</span> <span class="hljs-keyword">DROP</span> FOREIGN <span class="hljs-keyword">KEY</span> buyers_id;
-    <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">records</span> <span class="hljs-keyword">DROP</span> FOREIGN <span class="hljs-keyword">KEY</span> sellers_id;
-    <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">records</span> <span class="hljs-keyword">DROP</span> <span class="hljs-keyword">KEY</span> buyers_id;
-    <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">records</span> <span class="hljs-keyword">DROP</span> <span class="hljs-keyword">KEY</span> sellers_id;
-    <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TRIGGER</span> players_before_delete
-        <span class="hljs-keyword">BEFORE</span> <span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">ON</span> players
-        <span class="hljs-keyword">FOR</span> <span class="hljs-keyword">EACH</span> <span class="hljs-keyword">ROW</span>
-        <span class="hljs-keyword">BEGIN</span>
-            <span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">records</span> <span class="hljs-keyword">WHERE</span> seller_id = <span class="hljs-keyword">OLD</span>.p_id || buyer_id = <span class="hljs-keyword">OLD</span>.p_id;
-        <span class="hljs-keyword">END</span>;
-    <span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">FROM</span> players <span class="hljs-keyword">WHERE</span> p_id = <span class="hljs-number">10001</span>;
-    <span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">records</span>;
+<pre><code class="lang-sql"># &#x7531;&#x4E8E;&#x8868;&#x4E2D;&#x5B58;&#x5728;&#x5916;&#x952E;&#x5173;&#x7CFB;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x5148;&#x5220;&#x9664;&#x5916;&#x952E;&#x5173;&#x7CFB;&#xFF0C;&#x518D;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;
+<span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">records</span> <span class="hljs-keyword">DROP</span> FOREIGN <span class="hljs-keyword">KEY</span> buyers_id;
+<span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">records</span> <span class="hljs-keyword">DROP</span> FOREIGN <span class="hljs-keyword">KEY</span> sellers_id;
+<span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">records</span> <span class="hljs-keyword">DROP</span> <span class="hljs-keyword">KEY</span> buyers_id;
+<span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">records</span> <span class="hljs-keyword">DROP</span> <span class="hljs-keyword">KEY</span> sellers_id;
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TRIGGER</span> players_before_delete
+    <span class="hljs-keyword">BEFORE</span> <span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">ON</span> players
+    <span class="hljs-keyword">FOR</span> <span class="hljs-keyword">EACH</span> <span class="hljs-keyword">ROW</span>
+    <span class="hljs-keyword">BEGIN</span>
+        <span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">records</span> <span class="hljs-keyword">WHERE</span> seller_id = <span class="hljs-keyword">OLD</span>.p_id || buyer_id = <span class="hljs-keyword">OLD</span>.p_id;
+    <span class="hljs-keyword">END</span>;
+<span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">FROM</span> players <span class="hljs-keyword">WHERE</span> p_id = <span class="hljs-number">10001</span>;
+<span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">records</span>;
 </code></pre>
 <blockquote>
 <p>&#x5DF2;&#x7ECF;&#x66F4;&#x6B63;&#x4E3A; <code>player_before_delete</code></p>
@@ -649,14 +649,14 @@
 </ul>
 <h4 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h4>
 <p>&#x5728;&#x4E0A;&#x9762;&#x7684;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E86;&#x4E09;&#x4E2A;&#x89E6;&#x53D1;&#x5668;&#xFF0C;&#x5206;&#x522B;&#x662F; <code>records_after_insert</code>&#x3001;<code>records_before_update</code> &#x548C; <code>players_before_delete</code>&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>SHOW TRIGGERS</code> &#x547D;&#x4EE4;&#x6765;&#x67E5;&#x770B;&#x8FD9;&#x4E9B;&#x89E6;&#x53D1;&#x5668;&#x7684;&#x5B9A;&#x4E49;&#xFF1A;</p>
-<pre><code class="lang-sql">    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">TRIGGERS</span>;
-    # &#x4F7F;&#x7528; LIKE &#x6A21;&#x7CCA;&#x67E5;&#x8BE2;
-    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">TRIGGERS</span> <span class="hljs-keyword">LIKE</span> <span class="hljs-string">&apos;records%&apos;</span>;
+<pre><code class="lang-sql"><span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">TRIGGERS</span>;
+# &#x4F7F;&#x7528; LIKE &#x6A21;&#x7CCA;&#x67E5;&#x8BE2;
+<span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">TRIGGERS</span> <span class="hljs-keyword">LIKE</span> <span class="hljs-string">&apos;records%&apos;</span>;
 </code></pre>
 <p><img src="img/4-3-4.png" alt=""></p>
 <h3 id="&#x5220;&#x9664;&#x89E6;&#x53D1;&#x5668;">&#x5220;&#x9664;&#x89E6;&#x53D1;&#x5668;</h3>
 <h4 id="&#x8BED;&#x6CD5;">&#x8BED;&#x6CD5;</h4>
-<pre><code class="lang-sql">    <span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TRIGGER</span> [<span class="hljs-keyword">IF</span> <span class="hljs-keyword">EXISTS</span>] [schema_name.]trigger_name;
+<pre><code class="lang-sql"><span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TRIGGER</span> [<span class="hljs-keyword">IF</span> <span class="hljs-keyword">EXISTS</span>] [schema_name.]trigger_name;
 </code></pre>
 <p>&#x5176;&#x4E2D;:</p>
 <ul>
@@ -669,10 +669,10 @@
 </ul>
 <h4 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h4>
 <p>&#x5220;&#x9664;&#x4E4B;&#x524D;&#x521B;&#x5EFA;&#x7684;&#x89E6;&#x53D1;&#x5668;</p>
-<pre><code class="lang-sql">    <span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TRIGGER</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">EXISTS</span> records_after_insert;
-    <span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TRIGGER</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">EXISTS</span> records_before_update;
-    <span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TRIGGER</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">EXISTS</span> players_before_delete;
-    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">TRIGGERS</span>;
+<pre><code class="lang-sql"><span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TRIGGER</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">EXISTS</span> records_after_insert;
+<span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TRIGGER</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">EXISTS</span> records_before_update;
+<span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TRIGGER</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">EXISTS</span> players_before_delete;
+<span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">TRIGGERS</span>;
 </code></pre>
 <p><img src="img/4-3-5.png" alt=""></p>
 
@@ -718,7 +718,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4.3 触发器","level":"1.5.3","depth":2,"next":{"title":"4.4 存储过程","level":"1.5.4","depth":2,"path":"chapter4/4-4.md","ref":"chapter4/4-4.md","articles":[]},"previous":{"title":"4.2 数据库完整性","level":"1.5.2","depth":2,"path":"chapter4/4-2.md","ref":"chapter4/4-2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"code":{"copyButtons":false},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Cosmo Clara","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":31,"left":31,"top":24,"bottom":24}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"chapter4/4-3.md","mtime":"2024-05-20T02:08:19.265Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-05-20T07:09:30.230Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4.3 触发器","level":"1.5.3","depth":2,"next":{"title":"4.4 存储过程","level":"1.5.4","depth":2,"path":"chapter4/4-4.md","ref":"chapter4/4-4.md","articles":[]},"previous":{"title":"4.2 数据库完整性","level":"1.5.2","depth":2,"path":"chapter4/4-2.md","ref":"chapter4/4-2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"code":{"copyButtons":false},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Cosmo Clara","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":31,"left":31,"top":24,"bottom":24}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"chapter4/4-3.md","mtime":"2024-05-20T07:19:17.480Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-05-20T07:29:44.415Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

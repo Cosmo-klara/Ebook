@@ -546,17 +546,17 @@
 <li><code>UNION</code> &#x7684;&#x6BCF;&#x4E2A; <code>SELECT</code> &#x8BED;&#x53E5;&#x5408;&#x5E76;&#x7684;&#x5217;&#x5B57;&#x6BB5;&#x7C7B;&#x578B;&#x5FC5;&#x987B;&#x76F8;&#x540C; ( &#x53EF;&#x9690;&#x5F0F;&#x8F6C;&#x5316;&#x4E5F;&#x884C; )</li>
 </ol>
 <p>&#x4F8B;&#x5B50;&#xFF1A;</p>
-<pre><code class="lang-sql">    # &#x67E5;&#x8BE2;&#x5728;&#x7269;&#x54C1;&#x8868;&#x548C;&#x4EA4;&#x6613;&#x8BB0;&#x5F55;&#x8868;&#x4E2D;&#x4EF7;&#x683C;&#x90FD;&#x9AD8;&#x4E8E;10&#x7684;&#x7269;&#x54C1;id
-    <span class="hljs-keyword">SELECT</span> ri_id <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">records</span> <span class="hljs-keyword">WHERE</span> ri_price &gt; <span class="hljs-number">10</span>
-    <span class="hljs-keyword">UNION</span>
-    <span class="hljs-keyword">SELECT</span> i_value <span class="hljs-keyword">FROM</span> items <span class="hljs-keyword">WHERE</span> i_value &gt;<span class="hljs-number">10</span>;
+<pre><code class="lang-sql"># &#x67E5;&#x8BE2;&#x5728;&#x7269;&#x54C1;&#x8868;&#x548C;&#x4EA4;&#x6613;&#x8BB0;&#x5F55;&#x8868;&#x4E2D;&#x4EF7;&#x683C;&#x90FD;&#x9AD8;&#x4E8E;10&#x7684;&#x7269;&#x54C1;id
+<span class="hljs-keyword">SELECT</span> ri_id <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">records</span> <span class="hljs-keyword">WHERE</span> ri_price &gt; <span class="hljs-number">10</span>
+<span class="hljs-keyword">UNION</span>
+<span class="hljs-keyword">SELECT</span> i_value <span class="hljs-keyword">FROM</span> items <span class="hljs-keyword">WHERE</span> i_value &gt;<span class="hljs-number">10</span>;
 </code></pre>
 <p><img src="img/3-5-1.png" alt=" "></p>
 <h3 id="union-all">UNION ALL</h3>
 <p><code>UNION ALL</code> &#x4E0E; <code>UNION</code> &#x7684;&#x533A;&#x522B;&#x5728;&#x4E8E;&#xFF0C;<code>UNION ALL</code> &#x5C06;&#x4E0D;&#x4F1A;&#x5BF9;&#x5408;&#x5E76;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x53BB;&#x91CD;&#xFF0C;</p>
-<pre><code class="lang-sql">    <span class="hljs-keyword">SELECT</span> ri_id <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">records</span> <span class="hljs-keyword">WHERE</span> ri_price &gt; <span class="hljs-number">10</span>
-    <span class="hljs-keyword">UNION</span> ALL
-    <span class="hljs-keyword">SELECT</span> i_value <span class="hljs-keyword">FROM</span> items <span class="hljs-keyword">WHERE</span> i_value &gt;<span class="hljs-number">10</span>;
+<pre><code class="lang-sql"><span class="hljs-keyword">SELECT</span> ri_id <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">records</span> <span class="hljs-keyword">WHERE</span> ri_price &gt; <span class="hljs-number">10</span>
+<span class="hljs-keyword">UNION</span> ALL
+<span class="hljs-keyword">SELECT</span> i_value <span class="hljs-keyword">FROM</span> items <span class="hljs-keyword">WHERE</span> i_value &gt;<span class="hljs-number">10</span>;
 </code></pre>
 <p><img src="img/3-5-2.png" alt=" "></p>
 
@@ -602,7 +602,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3.5 合并查询","level":"1.4.5","depth":2,"next":{"title":"3.6 视图","level":"1.4.6","depth":2,"path":"chapter3/3-6.md","ref":"chapter3/3-6.md","articles":[]},"previous":{"title":"3.4 复杂查询","level":"1.4.4","depth":2,"path":"chapter3/3-4.md","ref":"chapter3/3-4.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"code":{"copyButtons":false},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Cosmo Clara","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":31,"left":31,"top":24,"bottom":24}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"chapter3/3-5.md","mtime":"2024-05-20T02:05:17.603Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-05-20T07:09:30.230Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3.5 合并查询","level":"1.4.5","depth":2,"next":{"title":"3.6 视图","level":"1.4.6","depth":2,"path":"chapter3/3-6.md","ref":"chapter3/3-6.md","articles":[]},"previous":{"title":"3.4 复杂查询","level":"1.4.4","depth":2,"path":"chapter3/3-4.md","ref":"chapter3/3-4.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"code":{"copyButtons":false},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Cosmo Clara","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":31,"left":31,"top":24,"bottom":24}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"chapter3/3-5.md","mtime":"2024-05-20T07:22:07.254Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-05-20T07:29:44.415Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
