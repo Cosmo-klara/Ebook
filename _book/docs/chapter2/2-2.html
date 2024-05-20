@@ -1,0 +1,821 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.2 数据表操作 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Cosmo Clara">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-treeview/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="2-3.html" />
+    
+    
+    <link rel="prev" href="2-1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter1/">
+            
+                <a href="../chapter1/">
+            
+                    
+                    第一章 MySQL 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter1/1-1.html">
+            
+                <a href="../chapter1/1-1.html">
+            
+                    
+                    1.1 MySQL安装与配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter1/1-2.html">
+            
+                <a href="../chapter1/1-2.html">
+            
+                    
+                    1.2 MySQLtee命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter1/1-3.html">
+            
+                <a href="../chapter1/1-3.html">
+            
+                    
+                    1.3 MySQL查看报错
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../chapter1/1-4.html">
+            
+                <a href="../chapter1/1-4.html">
+            
+                    
+                    1.4 MySQL字符集与校对集
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第二章 数据库基本操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="2-1.html">
+            
+                <a href="2-1.html">
+            
+                    
+                    2.1 数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="2-2.html">
+            
+                <a href="2-2.html">
+            
+                    
+                    2.2 数据表操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="2-3.html">
+            
+                <a href="2-3.html">
+            
+                    
+                    2.3 数据表数据操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter3/">
+            
+                <a href="../chapter3/">
+            
+                    
+                    第三章 数据库查询
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter3/3-1.html">
+            
+                <a href="../chapter3/3-1.html">
+            
+                    
+                    3.1 基本查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter3/3-2.html">
+            
+                <a href="../chapter3/3-2.html">
+            
+                    
+                    3.2 查询函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter3/3-3.html">
+            
+                <a href="../chapter3/3-3.html">
+            
+                    
+                    3.3 分组与排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../chapter3/3-4.html">
+            
+                <a href="../chapter3/3-4.html">
+            
+                    
+                    3.4 复杂查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../chapter3/3-5.html">
+            
+                <a href="../chapter3/3-5.html">
+            
+                    
+                    3.5 合并查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../chapter3/3-6.html">
+            
+                <a href="../chapter3/3-6.html">
+            
+                    
+                    3.6 视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter4/">
+            
+                <a href="../chapter4/">
+            
+                    
+                    第四章 数据库进阶操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter4/4-1.html">
+            
+                <a href="../chapter4/4-1.html">
+            
+                    
+                    4.1 索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter4/4-2.html">
+            
+                <a href="../chapter4/4-2.html">
+            
+                    
+                    4.2 数据库完整性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chapter4/4-3.html">
+            
+                <a href="../chapter4/4-3.html">
+            
+                    
+                    4.3 触发器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../chapter4/4-4.html">
+            
+                <a href="../chapter4/4-4.html">
+            
+                    
+                    4.4 存储过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter5/">
+            
+                <a href="../chapter5/">
+            
+                    
+                    第五章 数据库管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter5/5-1.html">
+            
+                <a href="../chapter5/5-1.html">
+            
+                    
+                    5.1 用户管理基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter5/5-2.html">
+            
+                <a href="../chapter5/5-2.html">
+            
+                    
+                    5.2 用户管理进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../chapter5/5-3.html">
+            
+                <a href="../chapter5/5-3.html">
+            
+                    
+                    5.3 权限管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../chapter5/5-4.html">
+            
+                <a href="../chapter5/5-4.html">
+            
+                    
+                    5.4 维护表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../chapter5/5-5.html">
+            
+                <a href="../chapter5/5-5.html">
+            
+                    
+                    5.5 备份与恢复
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2.2 数据表操作</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div class="treeview__container"><div class="treeview__container-title"><span class="treeview__main-title">Treeview</span><span class="treeview__copyright">Copyright &#xA9; aleen42 all right reserved, powered by <a href="https://github.com/aleen42" target="_blank">aleen42</a></span></div><ul>
+<li><div><a href="#&#x67E5;&#x770B;&#x6570;&#x636E;&#x8868;-show--desc">&#x67E5;&#x770B;&#x6570;&#x636E;&#x8868; SHOW / DESC</a><i></i></div></li>
+<li><div><a href="#&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;-create">&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868; CREATE</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#x8BED;&#x6CD5;&#xFF1A;">&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#x8BED;&#x6CD5;&#xFF1A;</a><i></i></div></li>
+<li><div><a href="#&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#xFF1A;">&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#xFF1A;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x4FEE;&#x6539;&#x6570;&#x636E;&#x8868;-alter">&#x4FEE;&#x6539;&#x6570;&#x636E;&#x8868; ALTER</a><i></i></div></li>
+<li><div><a href="#&#x5220;&#x9664;&#x6570;&#x636E;&#x8868;-drop">&#x5220;&#x9664;&#x6570;&#x636E;&#x8868; DROP</a><i></i></div></li>
+</ul>
+</div>
+
+<h1 id="&#x6570;&#x636E;&#x8868;&#x64CD;&#x4F5C;">&#x6570;&#x636E;&#x8868;&#x64CD;&#x4F5C;</h1>
+<h3 id="&#x67E5;&#x770B;&#x6570;&#x636E;&#x8868;-show--desc">&#x67E5;&#x770B;&#x6570;&#x636E;&#x8868; <code>SHOW</code> / <code>DESC</code></h3>
+<ul>
+<li><h4 id="&#x67E5;&#x770B;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5DF2;&#x6709;&#x7684;&#x6570;&#x636E;&#x8868;">&#x67E5;&#x770B;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5DF2;&#x6709;&#x7684;&#x6570;&#x636E;&#x8868;:</h4>
+</li>
+</ul>
+<pre><code class="lang-sql">    # &#x5148;&#x9009;&#x62E9;&#x4F7F;&#x7528;&#x7684;&#x6570;&#x636E;&#x5E93;( test3 &#x4E2D;&#x5DF2;&#x5EFA;&#x597D;&#x8868;)
+    <span class="hljs-keyword">USE</span> test3;
+    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">TABLES</span>;
+</code></pre>
+<p><img src="img/2-2-1.jpg" alt=" "></p>
+<ul>
+<li><h4 id="&#x67E5;&#x770B;&#x6307;&#x5B9A;&#x8868;&#x7ED3;&#x6784;&#xFF1A;">&#x67E5;&#x770B;&#x6307;&#x5B9A;&#x8868;&#x7ED3;&#x6784;&#xFF1A;</h4>
+</li>
+</ul>
+<pre><code class="lang-sql">    # DESC &#x662F; <span class="hljs-keyword">DESCRIBE</span> &#x7684;&#x7B80;&#x5199;&#xFF0C;&#x4E5F;&#x53EF;&#x5B8C;&#x6574;&#x5199;&#x51FA;&#x8FDB;&#x884C;&#x67E5;&#x770B;
+    <span class="hljs-keyword">DESC</span> students;
+    # &#x6548;&#x679C;&#x76F8;&#x540C;
+    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">COLUMNS</span> <span class="hljs-keyword">FROM</span> students;
+    # &#x663E;&#x793A;&#x5B8C;&#x6574;&#x8868;&#x7ED3;&#x6784;
+    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">FULL</span> <span class="hljs-keyword">COLUMNS</span> <span class="hljs-keyword">FROM</span> students;
+</code></pre>
+<p><img src="img/2-2-2.jpg" alt=" "></p>
+<ul>
+<li><h4 id="&#x67E5;&#x770B;&#x6570;&#x636E;&#x8868;&#x521B;&#x5EFA;&#x8BED;&#x53E5;">&#x67E5;&#x770B;&#x6570;&#x636E;&#x8868;&#x521B;&#x5EFA;&#x8BED;&#x53E5;</h4>
+</li>
+</ul>
+<pre><code class="lang-sql">    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> students;
+</code></pre>
+<p><img src="img/2-2-3.jpg" alt=" "></p>
+<h3 id="&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;-create">&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868; <code>CREATE</code></h3>
+<h4 id="&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#x8BED;&#x6CD5;&#xFF1A;">&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#x8BED;&#x6CD5;&#xFF1A;</h4>
+<pre><code class="lang-sql">    <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> &#x8868;&#x540D;&#x79F0;(
+&#x200B;        &#x5217;&#x540D;<span class="hljs-number">1</span> &#x6570;&#x636E;&#x7C7B;&#x578B;<span class="hljs-number">1</span>&#xFF0C;
+        &#x5217;&#x540D;<span class="hljs-number">2</span> &#x6570;&#x636E;&#x7C7B;&#x578B;<span class="hljs-number">2</span>&#xFF0C;
+             ....
+        &#x5217;&#x540D;n &#x6570;&#x636E;&#x7C7B;&#x578B;n
+        # &#x6CE8;&#x610F;&#xFF1A;&#x6700;&#x540E;&#x4E00;&#x5217;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x52A0;&#x9017;&#x53F7;
+    );
+</code></pre>
+<h4 id="&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#xFF1A;">&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#xFF1A;</h4>
+<ul>
+<li><h5 id="&#x5224;&#x65AD;&#x4E0D;&#x5B58;&#x5728;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;">&#x5224;&#x65AD;&#x4E0D;&#x5B58;&#x5728;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;</h5>
+</li>
+</ul>
+<pre><code class="lang-sql">    <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> test1(
+        <span class="hljs-keyword">id</span> <span class="hljs-built_in">INT</span>,
+        <span class="hljs-keyword">name</span> <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">20</span>)
+    );
+    # &#x9A8C;&#x8BC1;&#x662F;&#x5426;&#x6210;&#x529F;&#x521B;&#x5EFA;
+    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">TABLES</span>;
+    DESC test1;
+</code></pre>
+<p><img src="img/2-2-4.jpg" alt=" "></p>
+<ul>
+<li><h5 id="&#x5728;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#x65F6;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x96C6;">&#x5728;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#x65F6;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x96C6;</h5>
+</li>
+</ul>
+<blockquote>
+<p>&#x7531;&#x4E8E;&#x4FEE;&#x6539;&#x4E86;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>utf8</code> , &#x4E3A;&#x5C55;&#x793A;&#x6548;&#x679C;&#x6307;&#x5B9A;&#x4E3A; <code>gbk</code></p>
+</blockquote>
+<pre><code class="lang-sql">    <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> test2(
+        <span class="hljs-keyword">id</span> <span class="hljs-built_in">INT</span>,
+        <span class="hljs-keyword">name</span> <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">20</span>)
+    ) <span class="hljs-keyword">CHARSET</span> gbk;
+    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">FULL</span> <span class="hljs-keyword">COLUMNS</span> <span class="hljs-keyword">FROM</span> test2;
+</code></pre>
+<p><img src="img/2-2-5.jpg" alt=" "></p>
+<ul>
+<li><h5 id="&#x5728;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#x65F6;&#x4E3A;&#x5217;&#x6DFB;&#x52A0;&#x5907;&#x6CE8;&#x4FE1;&#x606F;">&#x5728;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#x65F6;&#x4E3A;&#x5217;&#x6DFB;&#x52A0;&#x5907;&#x6CE8;&#x4FE1;&#x606F;</h5>
+</li>
+</ul>
+<pre><code class="lang-sql">    <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> test3(
+        <span class="hljs-keyword">id</span> <span class="hljs-built_in">INT</span> <span class="hljs-keyword">COMMENT</span> <span class="hljs-string">&apos;&#x5B66;&#x53F7;&apos;</span>,
+        <span class="hljs-keyword">name</span> <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">20</span>) <span class="hljs-keyword">COMMENT</span> <span class="hljs-string">&apos;&#x59D3;&#x540D;&apos;</span>
+    );
+    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">FULL</span> <span class="hljs-keyword">COLUMNS</span> <span class="hljs-keyword">FROM</span> test3;
+</code></pre>
+<p><img src="img/2-2-6.jpg" alt=" "></p>
+<h3 id="&#x4FEE;&#x6539;&#x6570;&#x636E;&#x8868;-alter">&#x4FEE;&#x6539;&#x6570;&#x636E;&#x8868; <code>ALTER</code></h3>
+<blockquote>
+<p> &#x5B57;&#x6BB5;&#x540D;&#xFF1A;&#x6570;&#x636E;&#x8868;&#x7684;&#x5217;&#x540D;</p>
+</blockquote>
+<ul>
+<li><h4 id="&#x4FEE;&#x6539;&#x5B57;&#x7B26;&#x96C6;--charset">&#x4FEE;&#x6539;&#x5B57;&#x7B26;&#x96C6;  <code>CHARSET</code></h4>
+</li>
+</ul>
+<pre><code class="lang-sql">    # CHARSET &#x662F; CHARACTER <span class="hljs-keyword">SET</span>&#x7684;&#x7F29;&#x5199;
+    <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">CHARSET</span> utf8;
+    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> test2;
+</code></pre>
+<p><img src="img/2-2-7.jpg" alt=" "></p>
+<ul>
+<li><h4 id="&#x4FEE;&#x6539;&#x8868;&#x540D;&#x79F0;--rename">&#x4FEE;&#x6539;&#x8868;&#x540D;&#x79F0;  <code>RENAME</code></h4>
+</li>
+</ul>
+<pre><code class="lang-sql">    <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">RENAME</span> <span class="hljs-keyword">AS</span> test4;
+    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">TABLES</span>;
+    # &#x7B49;&#x6548;
+    <span class="hljs-keyword">RENAME</span> <span class="hljs-keyword">TABLE</span> test4 <span class="hljs-keyword">to</span> test0;
+    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">TABLES</span>;
+</code></pre>
+<p><img src="img/2-2-8.jpg" alt=" "></p>
+<ul>
+<li><h4 id="&#x65B0;&#x589E;&#x5B57;&#x6BB5;-add">&#x65B0;&#x589E;&#x5B57;&#x6BB5; <code>ADD</code></h4>
+</li>
+</ul>
+<pre><code class="lang-sql">    # &#x5728;&#x6700;&#x540E;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#xFF1A;
+    <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">ADD</span> gender <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">4</span>);
+    DESC test2;
+    # &#x5728;&#x6700;&#x524D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;
+    <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">ADD</span> major <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">8</span>) <span class="hljs-keyword">FIRST</span>;
+    DESC test2;
+    # &#x4E00;&#x6B21;&#x6DFB;&#x52A0;&#x591A;&#x4E2A;&#x5B57;&#x6BB5;&#xFF1A;
+    <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">ADD</span>(
+            <span class="hljs-keyword">class</span> <span class="hljs-built_in">INT</span>,
+            country <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">16</span>)
+        );
+    DESC test2;
+    # &#x6307;&#x5B9A;&#x5B57;&#x6BB5;&#x540E;&#x6DFB;&#x52A0;&#x5B57;&#x6BB5;&#xFF1A;
+    <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">ADD</span> phone_number <span class="hljs-built_in">INT</span> <span class="hljs-keyword">AFTER</span> <span class="hljs-keyword">class</span>;
+    DESC test2;
+</code></pre>
+<p><img src="img/2-2-9.jpg" alt=" "></p>
+<ul>
+<li><h4 id="&#x4FEE;&#x6539;&#x5B57;&#x6BB5;-change--modify">&#x4FEE;&#x6539;&#x5B57;&#x6BB5; <code>CHANGE</code> / <code>MODIFY</code></h4>
+<ul>
+<li><p>&#x4FEE;&#x6539;&#x5B57;&#x6BB5;&#x540D;&#xFF1A;</p>
+<pre><code class="lang-sql">  <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">CHANGE</span> major email <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">16</span>);
+  DESC test2;
+</code></pre>
+<p><img src="img/2-2-10.jpg" alt=" "></p>
+</li>
+<li><p>&#x4FEE;&#x6539;&#x5B57;&#x6BB5;&#x7C7B;&#x578B;&#xFF1A;</p>
+<pre><code class="lang-sql">  <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">MODIFY</span> <span class="hljs-keyword">name</span> <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">16</span>);
+  DESC test2;
+</code></pre>
+<p><img src="img/2-2-11.jpg" alt=" "></p>
+</li>
+<li><p>&#x4FEE;&#x6539;&#x5B57;&#x6BB5;&#x4F4D;&#x7F6E;&#xFF1A;</p>
+<pre><code class="lang-sql">  <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">MODIFY</span> <span class="hljs-keyword">id</span> <span class="hljs-built_in">INT</span> <span class="hljs-keyword">FIRST</span>;
+  DESC test2;
+  # &#x6307;&#x5B9A;&#x5B57;&#x6BB5;&#x540E;&#x6DFB;&#x52A0;&#x5B57;&#x6BB5;&#xFF1A;
+  <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">MODIFY</span> email <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">16</span>) <span class="hljs-keyword">AFTER</span> phone_number;
+  DESC test2;
+</code></pre>
+<p><img src="img/2-2-12.jpg" alt=" "></p>
+</li>
+<li><p>&#x4FEE;&#x6539;&#x5B57;&#x6BB5;&#x5B57;&#x7B26;&#x96C6;&#xFF1A;</p>
+<pre><code class="lang-sql">  <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">FULL</span> <span class="hljs-keyword">COLUMNS</span> <span class="hljs-keyword">FROM</span> test2;
+  <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">MODIFY</span> <span class="hljs-keyword">name</span> <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">16</span>) <span class="hljs-keyword">CHARSET</span> gbk;
+  <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">FULL</span> <span class="hljs-keyword">COLUMNS</span> <span class="hljs-keyword">FROM</span> test2;
+</code></pre>
+<p><img src="img/2-2-13.jpg" alt=" "></p>
+</li>
+</ul>
+</li>
+<li><h4 id="&#x5220;&#x9664;&#x5B57;&#x6BB5;-drop">&#x5220;&#x9664;&#x5B57;&#x6BB5; <code>DROP</code></h4>
+</li>
+</ul>
+<pre><code class="lang-sql">    # `COLUMN` &#x53EF;&#x7701;&#x7565;
+    <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2 <span class="hljs-keyword">DROP</span> <span class="hljs-keyword">COLUMN</span> country;
+    DESC test2;
+    # &#x5220;&#x9664;&#x591A;&#x4E2A;&#x5B57;&#x6BB5;
+    <span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> test2
+        <span class="hljs-keyword">DROP</span> gender,
+        <span class="hljs-keyword">DROP</span> <span class="hljs-keyword">class</span>,
+        <span class="hljs-keyword">DROP</span> email,
+        <span class="hljs-keyword">DROP</span> phone_number;
+    DESC test2;
+</code></pre>
+<p><img src="img/2-2-14.jpg" alt=" "></p>
+<h3 id="&#x5220;&#x9664;&#x6570;&#x636E;&#x8868;-drop">&#x5220;&#x9664;&#x6570;&#x636E;&#x8868; <code>DROP</code></h3>
+<pre><code class="lang-sql">    <span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">EXISTS</span> test2;
+    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">TABLES</span>;
+    # &#x4E00;&#x6B21;&#x6027;&#x5220;&#x9664;&#x591A;&#x4E2A;&#x6570;&#x636E;&#x8868;
+    <span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TABLE</span> test1, test3;
+    <span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">TABLES</span>;
+</code></pre>
+<p><img src="img/2-2-15.jpg" alt=" "></p>
+<blockquote>
+<p><strong>&#x6CE8;&#x610F;&#xFF0C;&#x6570;&#x636E;&#x8868;&#x53EF;&#x4EE5;&#x4E00;&#x6B21;&#x5220;&#x9664;&#x591A;&#x4E2A;&#xFF0C;&#x4F46;&#x6570;&#x636E;&#x5E93;&#x53EA;&#x80FD;&#x4E00;&#x4E2A;&#x4E00;&#x4E2A;&#x5220;&#x9664;</strong></p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2-1.html" class="navigation navigation-prev " aria-label="Previous page: 2.1 数据库操作">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="2-3.html" class="navigation navigation-next " aria-label="Next page: 2.3 数据表数据操作">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.2 数据表操作","level":"1.3.2","depth":2,"next":{"title":"2.3 数据表数据操作","level":"1.3.3","depth":2,"path":"chapter2/2-3.md","ref":"chapter2/2-3.md","articles":[]},"previous":{"title":"2.1 数据库操作","level":"1.3.1","depth":2,"path":"chapter2/2-1.md","ref":"chapter2/2-1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","page-treeview","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page-treeview":{"collapsed":false,"copyright":"Copyright &#169; aleen42","minHeaderCount":"2","minHeaderDeep":"2"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Cosmo Clara","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":31,"left":31,"top":24,"bottom":24}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"chapter2/2-2.md","mtime":"2024-05-08T10:56:34.302Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-05-20T06:12:33.477Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
